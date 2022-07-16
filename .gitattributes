@@ -2,3 +2,5 @@
 *.html linguist-detectable=true
 *.latex linguist-detectable=false
 *.htm linguist-detectable=true
+*.tex linguist-detectable=true
+*.js linguist-detectable=true
