@@ -1,2 +1,5 @@
 # Drone-3D
-Symulacja ruchomego drona podwodnego w 3D z wykorzystaniem programu Gnuplot.
+Repozytorium zawiera zadanie zaliczeniowe zrealizowane w ramach kursu programowania obiektowego na 2 semestrze studiów inżynierskich.
+
+
+
