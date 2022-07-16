@@ -1,0 +1,114 @@
+\hypertarget{classSMacierz}{}\section{Dokumentacja szablonu klasy S\+Macierz$<$ Typ, Wymiar $>$}
+\label{classSMacierz}\index{S\+Macierz$<$ Typ, Wymiar $>$@{S\+Macierz$<$ Typ, Wymiar $>$}}
+
+
+Klasa modeluje pojęcie macierzy kwadratowej.  
+
+
+
+
+{\ttfamily \#include $<$S\+Macierz.\+hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSMacierz_a7fa53b3a5b5b07e82493dc55447f5546}\label{classSMacierz_a7fa53b3a5b5b07e82493dc55447f5546}} 
+const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (unsigned int Kol) const
+\item 
+\mbox{\Hypertarget{classSMacierz_afc5e3fea0f930ea3ed722551c5c7e553}\label{classSMacierz_afc5e3fea0f930ea3ed722551c5c7e553}} 
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (unsigned int Kol)
+\item 
+\mbox{\Hypertarget{classSMacierz_a3176386344a6b9be84922c736f04e7d6}\label{classSMacierz_a3176386344a6b9be84922c736f04e7d6}} 
+const Typ {\bfseries operator()} (unsigned int Wie, unsigned int Kol) const
+\item 
+\mbox{\Hypertarget{classSMacierz_a799597af607b21870e608fe4afe6c4ed}\label{classSMacierz_a799597af607b21870e608fe4afe6c4ed}} 
+Typ \& {\bfseries operator()} (unsigned int Wie, unsigned int Kol)
+\item 
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSMacierz_ae72c507f32c5ce3db5ded6acacc64bc3}{operator$\ast$} (const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&Wek) const
+\item 
+const Typ \hyperlink{classSMacierz_a1445d4e0c95d303e28d2f89e9751d77d}{Wyznacznik} () const
+\item 
+void \hyperlink{classSMacierz_a3dd718281652814e45a5fe17f2c33b05}{operator=} (const \hyperlink{classSMacierz}{S\+Macierz}$<$ Typ, Wymiar $>$ \&Mac)
+\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSMacierz_afee8329b07e345879eead08f3a316f62}{Zamiana\+\_\+kolumn\+\_\+w\+\_\+macierzy} (unsigned int indeks1, unsigned int indeks2)
+\item 
+int \hyperlink{classSMacierz_aceb9638a718d4e5e0a03a020b041aa0d}{Zamiana\+\_\+z\+\_\+elementem\+\_\+niezerowym\+\_\+i\+\_\+zmiana\+\_\+mnoznika} (unsigned int indeks\+\_\+kolumny)
+\item 
+bool \hyperlink{classSMacierz_aca41f9c5eaf53fdb6ddb5f065f816fcd}{Sprowadz\+\_\+do\+\_\+trojkatnej} (int \&mnoznik\+\_\+wyznacznika)
+\item 
+const Typ \hyperlink{classSMacierz_a89430b42ebd5e4b6a5bd65b91d2124ca}{Wyznacznik\+\_\+\+Oblicz} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSMacierz_aba0891504ff93e4d1678867e2d787b1c}\label{classSMacierz_aba0891504ff93e4d1678867e2d787b1c}} 
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ {\bfseries \+\_\+\+Kolumna} \mbox{[}Wymiar\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Typ, int Wymiar$>$\newline
+class S\+Macierz$<$ Typ, Wymiar $>$}
+
+Klasa modeluje pojęcie macierzy kwadratowej. 
+
+Klasa modeluje pojęcie macierzy jako jednowymiarowej tablicy wektorów o wielkości \char`\"{}\+Wymiar\char`\"{}. Zawiera metody umożliwiające pobranie wartosci wybranego pola z wybranego wektora tablicy klasy, czy też jego modyfikację. Ponadto umożliwia wykonanie mnożenia macierzy przez wektor, wyliczenie wyznacznika, transpozycję macierzy oraz podstawienie jednej macierzy do drugiej. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classSMacierz_ae72c507f32c5ce3db5ded6acacc64bc3}\label{classSMacierz_ae72c507f32c5ce3db5ded6acacc64bc3}} 
+\index{S\+Macierz@{S\+Macierz}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!S\+Macierz@{S\+Macierz}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename Typ , int Wymiar$>$ \\
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSMacierz}{S\+Macierz}$<$ Typ, Wymiar $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&}]{Wek }\end{DoxyParamCaption}) const}
+
+Mnozenie stalej macierzy wywolania przez staly wektor wywolania Argumenty\+: Wek -\/ referencja do stalego wektora -\/ klasy \hyperlink{classSWektor}{S\+Wektor} Argument domyslny -\/ staly obiekt klasy \hyperlink{classSMacierz}{S\+Macierz} Zwraca\+: wynik -\/ wektor bedacy wynikiem operacji mnozenia \mbox{\Hypertarget{classSMacierz_a3dd718281652814e45a5fe17f2c33b05}\label{classSMacierz_a3dd718281652814e45a5fe17f2c33b05}} 
+\index{S\+Macierz@{S\+Macierz}!operator=@{operator=}}
+\index{operator=@{operator=}!S\+Macierz@{S\+Macierz}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Typ , int Wymiar$>$ \\
+void \hyperlink{classSMacierz}{S\+Macierz}$<$ Typ, Wymiar $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classSMacierz}{S\+Macierz}$<$ Typ, Wymiar $>$ \&}]{Mac }\end{DoxyParamCaption})}
+
+Przypisanie wartości elementów stalej macierzy argumentu do wartości elementów macierzy wywołania Argumenty\+: Mac -\/ referencja do stalej macierzy -\/ obiektu klasy \hyperlink{classSMacierz}{S\+Macierz} Argument domyslny -\/ modyfikowalny obiekt klasy \hyperlink{classSMacierz}{S\+Macierz} \mbox{\Hypertarget{classSMacierz_aca41f9c5eaf53fdb6ddb5f065f816fcd}\label{classSMacierz_aca41f9c5eaf53fdb6ddb5f065f816fcd}} 
+\index{S\+Macierz@{S\+Macierz}!Sprowadz\+\_\+do\+\_\+trojkatnej@{Sprowadz\+\_\+do\+\_\+trojkatnej}}
+\index{Sprowadz\+\_\+do\+\_\+trojkatnej@{Sprowadz\+\_\+do\+\_\+trojkatnej}!S\+Macierz@{S\+Macierz}}
+\subsubsection{\texorpdfstring{Sprowadz\+\_\+do\+\_\+trojkatnej()}{Sprowadz\_do\_trojkatnej()}}
+{\footnotesize\ttfamily template$<$typename Typ , int Wymiar$>$ \\
+bool \hyperlink{classSMacierz}{S\+Macierz}$<$ Typ, Wymiar $>$\+::Sprowadz\+\_\+do\+\_\+trojkatnej (\begin{DoxyParamCaption}\item[{int \&}]{mnoznik }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Realizuje sprowadzenie macierzy wywolania do macierzy trojkatnej Argumenty\+: Argumenty domyślny -\/ modyfikowalny obiekt klasy \hyperlink{classSMacierz}{S\+Macierz} mnoznik -\/ referencja do obiektu int, ktory ulega zmianie w zaleznosci od ilosci wykonania operacji zamiany dwoch kolumn miejscami. Obiekt ten moze przyjac wartosc 1, -\/1 lub 0. Zwraca\+: false -\/ nie udalo sie sprowadzic do macierzy trojkatnej true -\/ udalo sie sprowadzic do macierzy trojkatnej \mbox{\Hypertarget{classSMacierz_a1445d4e0c95d303e28d2f89e9751d77d}\label{classSMacierz_a1445d4e0c95d303e28d2f89e9751d77d}} 
+\index{S\+Macierz@{S\+Macierz}!Wyznacznik@{Wyznacznik}}
+\index{Wyznacznik@{Wyznacznik}!S\+Macierz@{S\+Macierz}}
+\subsubsection{\texorpdfstring{Wyznacznik()}{Wyznacznik()}}
+{\footnotesize\ttfamily template$<$typename Typ , int Wymiar$>$ \\
+const Typ \hyperlink{classSMacierz}{S\+Macierz}$<$ Typ, Wymiar $>$\+::Wyznacznik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Podaje wartosc wyznacznika macierzy wywolania Argumenty\+: Argumenty domyślny -\/ staly obiekt klasy \hyperlink{classSMacierz}{S\+Macierz} Zwraca\+: Wyliczona wartosc wyznacznika \mbox{\Hypertarget{classSMacierz_a89430b42ebd5e4b6a5bd65b91d2124ca}\label{classSMacierz_a89430b42ebd5e4b6a5bd65b91d2124ca}} 
+\index{S\+Macierz@{S\+Macierz}!Wyznacznik\+\_\+\+Oblicz@{Wyznacznik\+\_\+\+Oblicz}}
+\index{Wyznacznik\+\_\+\+Oblicz@{Wyznacznik\+\_\+\+Oblicz}!S\+Macierz@{S\+Macierz}}
+\subsubsection{\texorpdfstring{Wyznacznik\+\_\+\+Oblicz()}{Wyznacznik\_Oblicz()}}
+{\footnotesize\ttfamily template$<$typename Typ , int Wymiar$>$ \\
+const Typ \hyperlink{classSMacierz}{S\+Macierz}$<$ Typ, Wymiar $>$\+::Wyznacznik\+\_\+\+Oblicz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Realizuje obliczenie wartosci wyznacznika macierzy wywolania Argumenty\+: Argumenty domyślny -\/ modyfikowalny obiekt klasy \hyperlink{classSMacierz}{S\+Macierz} Zwraca\+: wartosc -\/ wyliczona wartosc wynzacznika macierzy \mbox{\Hypertarget{classSMacierz_afee8329b07e345879eead08f3a316f62}\label{classSMacierz_afee8329b07e345879eead08f3a316f62}} 
+\index{S\+Macierz@{S\+Macierz}!Zamiana\+\_\+kolumn\+\_\+w\+\_\+macierzy@{Zamiana\+\_\+kolumn\+\_\+w\+\_\+macierzy}}
+\index{Zamiana\+\_\+kolumn\+\_\+w\+\_\+macierzy@{Zamiana\+\_\+kolumn\+\_\+w\+\_\+macierzy}!S\+Macierz@{S\+Macierz}}
+\subsubsection{\texorpdfstring{Zamiana\+\_\+kolumn\+\_\+w\+\_\+macierzy()}{Zamiana\_kolumn\_w\_macierzy()}}
+{\footnotesize\ttfamily template$<$typename Typ , int Wymiar$>$ \\
+void \hyperlink{classSMacierz}{S\+Macierz}$<$ Typ, Wymiar $>$\+::Zamiana\+\_\+kolumn\+\_\+w\+\_\+macierzy (\begin{DoxyParamCaption}\item[{unsigned int}]{indeks1,  }\item[{unsigned int}]{indeks2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Zamiana miejscami dwóch wybranych kolumn w macierzy wywołania Argumenty\+: Argumenty domyślny -\/ modyfikowalny obiekt klasy \hyperlink{classSMacierz}{S\+Macierz} indeks1, indeks2 -\/ indeksy wybranych kolumn do zamiany \mbox{\Hypertarget{classSMacierz_aceb9638a718d4e5e0a03a020b041aa0d}\label{classSMacierz_aceb9638a718d4e5e0a03a020b041aa0d}} 
+\index{S\+Macierz@{S\+Macierz}!Zamiana\+\_\+z\+\_\+elementem\+\_\+niezerowym\+\_\+i\+\_\+zmiana\+\_\+mnoznika@{Zamiana\+\_\+z\+\_\+elementem\+\_\+niezerowym\+\_\+i\+\_\+zmiana\+\_\+mnoznika}}
+\index{Zamiana\+\_\+z\+\_\+elementem\+\_\+niezerowym\+\_\+i\+\_\+zmiana\+\_\+mnoznika@{Zamiana\+\_\+z\+\_\+elementem\+\_\+niezerowym\+\_\+i\+\_\+zmiana\+\_\+mnoznika}!S\+Macierz@{S\+Macierz}}
+\subsubsection{\texorpdfstring{Zamiana\+\_\+z\+\_\+elementem\+\_\+niezerowym\+\_\+i\+\_\+zmiana\+\_\+mnoznika()}{Zamiana\_z\_elementem\_niezerowym\_i\_zmiana\_mnoznika()}}
+{\footnotesize\ttfamily template$<$typename Typ , int Wymiar$>$ \\
+int \hyperlink{classSMacierz}{S\+Macierz}$<$ Typ, Wymiar $>$\+::Zamiana\+\_\+z\+\_\+elementem\+\_\+niezerowym\+\_\+i\+\_\+zmiana\+\_\+mnoznika (\begin{DoxyParamCaption}\item[{unsigned int}]{indeks\+\_\+zera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Realizuje przegladanie wybranego wiersza macierzy w celu odnalezienia kolumny z elementem niezerowym, a nastepnie zamiane kolumn. Argumenty\+: Argumenty domyślny -\/ modyfikowalny obiekt klasy \hyperlink{classSMacierz}{S\+Macierz} indeks\+\_\+zera -\/ okresla wiersz, ktory przeszukujemy oraz kolumne poprzedzajaca ta, od ktorej zaczynamy przeszukiwanie Zwraca\+: 0 -\/ nie udalo sie odnalezc elementu niezerowego -\/1 -\/ udalo sie odnalezc element niezerowy -\/ mnoznik wyznacznika zmienia znak na przeciwny 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{SMacierz_8hh}{S\+Macierz.\+hh}\end{DoxyCompactItemize}

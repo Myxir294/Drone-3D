@@ -1,0 +1,402 @@
+\hypertarget{classScena}{}\section{Dokumentacja klasy Scena}
+\label{classScena}\index{Scena@{Scena}}
+
+
+\hyperlink{classScena}{Scena} jako klasa zarzadzajaca obiektami graficznymi.  
+
+
+
+
+{\ttfamily \#include $<$Scena.\+hh$>$}
+
+
+
+Diagram współpracy dla Scena\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classScena__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDron}{Dron} \& \hyperlink{classScena_af1091cf596813b9bfd9988296098fb72}{Wez\+\_\+\+Drona1} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego Dron1. \end{DoxyCompactList}\item 
+bool \hyperlink{classScena_ab26c6debc2e4671ea62af02f42e2e16d}{Dodaj\+\_\+\+Powierzchnie} (const char $\ast$Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia dodanie do listy przeszkod elementu klasy \hyperlink{classPowierzchnia}{Powierzchnia}. \end{DoxyCompactList}\item 
+bool \hyperlink{classScena_ab569c96c91809528437fa573ae21e9f7}{Dodaj\+\_\+\+Powierzchnie\+\_\+\+Falowana} (const char $\ast$Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia wczytanie powierzchni wody, klasy \hyperlink{classPowierzchniaFalowana}{Powierzchnia\+Falowana}. \end{DoxyCompactList}\item 
+bool \hyperlink{classScena_a62a362fa6ff9abdfe81332546513ada8}{Dodaj\+\_\+\+Bryle} (const char $\ast$Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia dodanie do listy przeszkod elementu klasy \hyperlink{classProstopadloscian}{Prostopadloscian}. \end{DoxyCompactList}\item 
+bool \hyperlink{classScena_a8c12fed91688fae5d233916590a4491d}{Dodaj\+\_\+\+Pret} (const char $\ast$Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia dodanie do listy przeszkod elementu klasy \hyperlink{classPret}{Pret}. \end{DoxyCompactList}\item 
+void \hyperlink{classScena_a39bb68f2653e88942d49b52d0aa7da4d}{Wyczysc\+Liste} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zwolnienie pamieci listy. \end{DoxyCompactList}\item 
+bool \hyperlink{classScena_ae4a2e4ac47a7d7183c3dd868d592a649}{Dodaj\+\_\+\+Drona} (\hyperlink{classDron}{Dron} \&Element, const char $\ast$Nazwa\+Pliku\+We\+Rdzen, const char $\ast$Nazwa\+Pliku\+We\+L\+Sruba, const char $\ast$Nazwa\+Pliku\+We\+P\+Sruba, const char $\ast$Nazwa\+Pliku\+Wy\+Rdzen, const char $\ast$Nazwa\+Pliku\+Wy\+L\+Sruba, const char $\ast$Nazwa\+Pliku\+Wy\+P\+Sruba)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia wczytanie drona, klasy \hyperlink{classDron}{Dron} Metoda umozliwia wczytanie elementu sladowego dron, klasy \hyperlink{classDron}{Dron}, przypisujac mu odpowiednie pliki oraz przekazujac nazwy tych pliku do programu {\itshape gnuplot}. \end{DoxyCompactList}\item 
+bool \hyperlink{classScena_a296cfc0d95b90f8818fc5a1bbd073929}{Inicjalizuj\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia inicjalizacje sceny. \end{DoxyCompactList}\item 
+bool \hyperlink{classScena_a12ddfaedd1f01ba311e5b6ecba34840f}{Animowany\+\_\+\+Obrot\+\_\+\+Bryly} (\hyperlink{classDron}{Dron} \&Element, int kat)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia animowany obrot drona. \end{DoxyCompactList}\item 
+bool \hyperlink{classScena_acb95c285091570758e28c06dfa4f6d66}{Animowana\+\_\+\+Translacja\+\_\+\+Bryly} (\hyperlink{classDron}{Dron} \&Element, int kat\+\_\+z, unsigned int dlugosc)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia animowany ruch drona. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSWektor}{Wektor3D} \hyperlink{classScena_a624e04176f4f183d5c78604b66925534}{Oblicz\+Wektor\+Przesuniecia} (unsigned int dlugosc, int kat\+\_\+z, int kat\+\_\+orientacji) const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia obliczenie wektora przesuniecia bryly. \end{DoxyCompactList}\item 
+void \hyperlink{classScena_afa809376ae94fea3e939b9e354f882d3}{Rysuj\+\_\+\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia narysowanie obecnego stanu obiektow graficznych. \end{DoxyCompactList}\item 
+bool \hyperlink{classScena_ad718f45ba059441502ae63688acb43ba}{Sprawdz\+Wynurzenie} (\hyperlink{classDron}{Dron} \&Element) const
+\begin{DoxyCompactList}\small\item\em Realizuje sprawdzenie stopnia wynurzenia wskazanej ruchomej bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPzG_1_1LaczeDoGNUPlota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota} \hyperlink{classScena_ae8d7d121ba09af12c456a6dfe6da316b}{Lacze}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje zmienna umozliwiajaca przekazanie danych do programu {\itshape gnuplot}. \end{DoxyCompactList}\item 
+\hyperlink{classDron}{Dron} \hyperlink{classScena_a98ad54358eeb2b6f1ea3c4b1c16c72b4}{Dron1}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje zmienna interpretujaca ruchomego drona. \end{DoxyCompactList}\item 
+\hyperlink{classPowierzchniaFalowana}{Powierzchnia\+Falowana} \hyperlink{classScena_a6053a6a241f17e12f47717a73d0988d6}{Woda}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje zmienna interpretujaca powierzchnie wody. \end{DoxyCompactList}\item 
+std\+::list$<$ \hyperlink{classObiektSceny}{Obiekt\+Sceny} $\ast$ $>$ \hyperlink{classScena_ad892638f354c23efb22296381aedd04f}{Lista}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje liste tworzonych dynamicznie przeszkód. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\hyperlink{classScena}{Scena} jako klasa zarzadzajaca obiektami graficznymi. 
+
+Definicja klasy \hyperlink{classScena}{Scena}, sluzacej do zarzadzania graficznymi interpretacjami obiektow wykorzystywanych przez program. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classScena_acb95c285091570758e28c06dfa4f6d66}\label{classScena_acb95c285091570758e28c06dfa4f6d66}} 
+\index{Scena@{Scena}!Animowana\+\_\+\+Translacja\+\_\+\+Bryly@{Animowana\+\_\+\+Translacja\+\_\+\+Bryly}}
+\index{Animowana\+\_\+\+Translacja\+\_\+\+Bryly@{Animowana\+\_\+\+Translacja\+\_\+\+Bryly}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Animowana\+\_\+\+Translacja\+\_\+\+Bryly()}{Animowana\_Translacja\_Bryly()}}
+{\footnotesize\ttfamily bool Scena\+::\+Animowana\+\_\+\+Translacja\+\_\+\+Bryly (\begin{DoxyParamCaption}\item[{\hyperlink{classDron}{Dron} \&}]{Element,  }\item[{int}]{kat\+\_\+z,  }\item[{unsigned int}]{dlugosc }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia animowany ruch drona. 
+
+Metoda umozliwia animowany ruch drona z wykorzystaniem zdefiniowanych wartosci D\+O\+K\+L\+A\+D\+N\+O\+S\+C\+\_\+\+W\+E\+K\+T\+O\+R\+A\+\_\+\+O\+D\+S\+W\+I\+E\+Z\+A\+N\+IA (dlugosc wektora pojedynczej fazy ruchu) oraz C\+Z\+A\+S\+\_\+\+O\+D\+S\+W\+I\+E\+Z\+A\+N\+IA (czas miedzy kazda z faz ruchu, w ms). Przed kazda faza ruchu metoda sprawdza, czy nie spowodowalaby ona uderzenia o przeszkode lub nadmiernego wynurzenia. W pierwszym przypadku ruch zostaje przerwany, a w drugim ruch jest kontynuowany z zachowaniem stalej wysokosci drona. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & Element -\/ referencja do przesuwanego obiektu \\
+\hline
+\mbox{\tt in}  & {\em -\/} & kat\+\_\+z -\/ kat wynurzenia/zanurzenia drona \\
+\hline
+\mbox{\tt in}  & {\em -\/} & dlugosc -\/ dlugosc zadanego ruchu \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ ruch udalo sie wykonac poprawnie \\
+\hline
+{\em false} & -\/ nie udalo sie poprawnie wykonac operacji lub operacja spowodowalaby kolizje z dnem \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_a12ddfaedd1f01ba311e5b6ecba34840f}\label{classScena_a12ddfaedd1f01ba311e5b6ecba34840f}} 
+\index{Scena@{Scena}!Animowany\+\_\+\+Obrot\+\_\+\+Bryly@{Animowany\+\_\+\+Obrot\+\_\+\+Bryly}}
+\index{Animowany\+\_\+\+Obrot\+\_\+\+Bryly@{Animowany\+\_\+\+Obrot\+\_\+\+Bryly}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Animowany\+\_\+\+Obrot\+\_\+\+Bryly()}{Animowany\_Obrot\_Bryly()}}
+{\footnotesize\ttfamily bool Scena\+::\+Animowany\+\_\+\+Obrot\+\_\+\+Bryly (\begin{DoxyParamCaption}\item[{\hyperlink{classDron}{Dron} \&}]{Element,  }\item[{int}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia animowany obrot drona. 
+
+Metoda umozliwia animowany obrot drona z wykorzystaniem zdefiniowanych wartosci D\+O\+K\+L\+A\+D\+N\+O\+S\+C\+\_\+\+K\+A\+T\+A\+\_\+\+O\+D\+S\+W\+I\+E\+Z\+A\+N\+IA (kat pojedynczej fazy ruchu, w stopniach) oraz C\+Z\+A\+S\+\_\+\+O\+D\+S\+W\+I\+E\+Z\+A\+N\+IA (czas miedzy kazda z faz ruchu, w ms) 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & Element -\/ referencja do obracanego obiektu \\
+\hline
+\mbox{\tt in}  & {\em -\/} & kat -\/ kat o jaki dron ma sie obrocic \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ obrot udalo sie wykonac poprawnie \\
+\hline
+{\em false} & -\/ nie udalo sie poprawnie wykonac operacji -\/ wystapil blad wyliczenia lub obrot spowodowalby kolizje z przeszkoda \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_a62a362fa6ff9abdfe81332546513ada8}\label{classScena_a62a362fa6ff9abdfe81332546513ada8}} 
+\index{Scena@{Scena}!Dodaj\+\_\+\+Bryle@{Dodaj\+\_\+\+Bryle}}
+\index{Dodaj\+\_\+\+Bryle@{Dodaj\+\_\+\+Bryle}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Dodaj\+\_\+\+Bryle()}{Dodaj\_Bryle()}}
+{\footnotesize\ttfamily bool Scena\+::\+Dodaj\+\_\+\+Bryle (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia dodanie do listy przeszkod elementu klasy \hyperlink{classProstopadloscian}{Prostopadloscian}. 
+
+Metoda umozliwia dynamiczne nieruchomego elementu skladowego sceny, klasy \hyperlink{classProstopadloscian}{Prostopadloscian}, przypisujac mu odpowiedni plik oraz przekazujac nazwe tego pliku do programu {\itshape gnuplot}. Obiekt ten zostaje nastepnie zapamietany w liscie przeszkod. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku -\/ nazwa pliku z danymi lokalnymi dodawanej powierzchni \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ element zostal wczytany poprawnie \\
+\hline
+{\em false} & -\/ nie udalo sie poprawnie wczytac elementu -\/ plik z danymi jest niepoprawny lub nie istnieje \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_ae4a2e4ac47a7d7183c3dd868d592a649}\label{classScena_ae4a2e4ac47a7d7183c3dd868d592a649}} 
+\index{Scena@{Scena}!Dodaj\+\_\+\+Drona@{Dodaj\+\_\+\+Drona}}
+\index{Dodaj\+\_\+\+Drona@{Dodaj\+\_\+\+Drona}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Dodaj\+\_\+\+Drona()}{Dodaj\_Drona()}}
+{\footnotesize\ttfamily bool Scena\+::\+Dodaj\+\_\+\+Drona (\begin{DoxyParamCaption}\item[{\hyperlink{classDron}{Dron} \&}]{Element,  }\item[{const char $\ast$}]{Nazwa\+Pliku\+We\+Rdzen,  }\item[{const char $\ast$}]{Nazwa\+Pliku\+We\+L\+Sruba,  }\item[{const char $\ast$}]{Nazwa\+Pliku\+We\+P\+Sruba,  }\item[{const char $\ast$}]{Nazwa\+Pliku\+Wy\+Rdzen,  }\item[{const char $\ast$}]{Nazwa\+Pliku\+Wy\+L\+Sruba,  }\item[{const char $\ast$}]{Nazwa\+Pliku\+Wy\+P\+Sruba }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia wczytanie drona, klasy \hyperlink{classDron}{Dron} Metoda umozliwia wczytanie elementu sladowego dron, klasy \hyperlink{classDron}{Dron}, przypisujac mu odpowiednie pliki oraz przekazujac nazwy tych pliku do programu {\itshape gnuplot}. 
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & Element -\/ referencja do dodawanego drona \\
+\hline
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku\+We\+Rdzen -\/ nazwa pliku z danymi lokalnymi rdzenia drona \\
+\hline
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku\+Wy\+Rdzen -\/ nazwa pliku zapisu wspolrzedznych globalnych rdzenia drona \\
+\hline
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku\+We\+L\+Sruba -\/ nazwa pliku z danymi lokalnymi lewej sruby drona \\
+\hline
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku\+Wy\+L\+Sruba -\/ nazwa pliku zapisu wspolrzedznych globalnych lewej sruby drona \\
+\hline
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku\+We\+P\+Sruba -\/ nazwa pliku z danymi lokalnymi prawej sruby drona \\
+\hline
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku\+Wy\+P\+Sruba -\/ nazwa pliku zapisu wspolrzedznych globalnych prawej sruby drona \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ element zostal wczytany poprawnie \\
+\hline
+{\em false} & -\/ nie udalo sie poprawnie wczytac elementu -\/ przynajmniej jeden plik z danymi jest niepoprawny lub nie istnieje \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_ab26c6debc2e4671ea62af02f42e2e16d}\label{classScena_ab26c6debc2e4671ea62af02f42e2e16d}} 
+\index{Scena@{Scena}!Dodaj\+\_\+\+Powierzchnie@{Dodaj\+\_\+\+Powierzchnie}}
+\index{Dodaj\+\_\+\+Powierzchnie@{Dodaj\+\_\+\+Powierzchnie}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Dodaj\+\_\+\+Powierzchnie()}{Dodaj\_Powierzchnie()}}
+{\footnotesize\ttfamily bool Scena\+::\+Dodaj\+\_\+\+Powierzchnie (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia dodanie do listy przeszkod elementu klasy \hyperlink{classPowierzchnia}{Powierzchnia}. 
+
+Metoda umozliwia dynamiczne nieruchomego elementu skladowego sceny, klasy \hyperlink{classPowierzchnia}{Powierzchnia}, przypisujac mu odpowiedni plik oraz przekazujac nazwe tego pliku do programu {\itshape gnuplot}. Obiekt ten zostaje nastepnie zapamietany w liscie przeszkod. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku -\/ nazwa pliku z danymi lokalnymi dodawanej powierzchni \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ element zostal wczytany poprawnie \\
+\hline
+{\em false} & -\/ nie udalo sie poprawnie wczytac elementu -\/ plik z danymi jest niepoprawny lub nie istnieje \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_ab569c96c91809528437fa573ae21e9f7}\label{classScena_ab569c96c91809528437fa573ae21e9f7}} 
+\index{Scena@{Scena}!Dodaj\+\_\+\+Powierzchnie\+\_\+\+Falowana@{Dodaj\+\_\+\+Powierzchnie\+\_\+\+Falowana}}
+\index{Dodaj\+\_\+\+Powierzchnie\+\_\+\+Falowana@{Dodaj\+\_\+\+Powierzchnie\+\_\+\+Falowana}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Dodaj\+\_\+\+Powierzchnie\+\_\+\+Falowana()}{Dodaj\_Powierzchnie\_Falowana()}}
+{\footnotesize\ttfamily bool Scena\+::\+Dodaj\+\_\+\+Powierzchnie\+\_\+\+Falowana (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia wczytanie powierzchni wody, klasy \hyperlink{classPowierzchniaFalowana}{Powierzchnia\+Falowana}. 
+
+Metoda umozliwia wczytanie elementu sladowego Woda, klasy \hyperlink{classPowierzchniaFalowana}{Powierzchnia\+Falowana}, przypisujac mu odpowiedni plik oraz przekazujac nazwe tego pliku do programu {\itshape gnuplot} 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku -\/ nazwa pliku z danymi lokalnymi dodawanej powierzchni \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ element zostal wczytany poprawnie \\
+\hline
+{\em false} & -\/ nie udalo sie poprawnie wczytac elementu -\/ plik z danymi jest niepoprawny lub nie istnieje \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_a8c12fed91688fae5d233916590a4491d}\label{classScena_a8c12fed91688fae5d233916590a4491d}} 
+\index{Scena@{Scena}!Dodaj\+\_\+\+Pret@{Dodaj\+\_\+\+Pret}}
+\index{Dodaj\+\_\+\+Pret@{Dodaj\+\_\+\+Pret}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Dodaj\+\_\+\+Pret()}{Dodaj\_Pret()}}
+{\footnotesize\ttfamily bool Scena\+::\+Dodaj\+\_\+\+Pret (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia dodanie do listy przeszkod elementu klasy \hyperlink{classPret}{Pret}. 
+
+Metoda umozliwia dynamiczne nieruchomego elementu skladowego sceny, klasy \hyperlink{classPret}{Pret}, przypisujac mu odpowiedni plik oraz przekazujac nazwe tego pliku do programu {\itshape gnuplot}. Obiekt ten zostaje nastepnie zapamietany w liscie przeszkod. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & Nazwa\+Pliku -\/ nazwa pliku z danymi lokalnymi dodawanej powierzchni \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ element zostal wczytany poprawnie \\
+\hline
+{\em false} & -\/ nie udalo sie poprawnie wczytac elementu -\/ plik z danymi jest niepoprawny lub nie istnieje \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_a296cfc0d95b90f8818fc5a1bbd073929}\label{classScena_a296cfc0d95b90f8818fc5a1bbd073929}} 
+\index{Scena@{Scena}!Inicjalizuj\+Scene@{Inicjalizuj\+Scene}}
+\index{Inicjalizuj\+Scene@{Inicjalizuj\+Scene}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Inicjalizuj\+Scene()}{InicjalizujScene()}}
+{\footnotesize\ttfamily bool Scena\+::\+Inicjalizuj\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia inicjalizacje sceny. 
+
+Metoda umozliwia inicjalizacje sceny, wczytujac elementy okreslone w polach klasy, dodajac do listy przekszód po jednym przykladzie kazdej przeszkody oraz przekazujac programowi {\itshape gnuplot} nazwy plikow, na podstawie ktorych rysowana bedzie scena. W przypadku poprawnej inicjalizacji program {\itshape gnuplot} rozpoczyna prace od narysowania graficznej interpretacji poczatkowego stanu sceny.
+
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ inicjalizacja przebiegla pomyslnie \\
+\hline
+{\em false} & -\/ nie udalo sie poprawnie wczytac elementow sceny \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_a624e04176f4f183d5c78604b66925534}\label{classScena_a624e04176f4f183d5c78604b66925534}} 
+\index{Scena@{Scena}!Oblicz\+Wektor\+Przesuniecia@{Oblicz\+Wektor\+Przesuniecia}}
+\index{Oblicz\+Wektor\+Przesuniecia@{Oblicz\+Wektor\+Przesuniecia}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Oblicz\+Wektor\+Przesuniecia()}{ObliczWektorPrzesuniecia()}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} Scena\+::\+Oblicz\+Wektor\+Przesuniecia (\begin{DoxyParamCaption}\item[{unsigned int}]{dlugosc,  }\item[{int}]{kat\+\_\+z,  }\item[{int}]{kat\+\_\+orientacji }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda umozliwia obliczenie wektora przesuniecia bryly. 
+
+Metoda umozliwia obliczenie wektora przesuniecia bryly, uwzgledniajac jej obecny kat orientacji oraz wskazany kat wynurzenia/zanurzenia
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em dlugosc} & -\/ zadana dlugosc wektora przesuniecia \\
+\hline
+\mbox{\tt in}  & {\em kat\+\_\+z} & -\/ zadana kat wynurzenia/zanurzenia \\
+\hline
+\mbox{\tt in}  & {\em kat\+\_\+orientacji} & -\/ aktualny kat orientacji bryly wokol osi OZ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wektor3D} & -\/ okreslajacy zmiane polozenia \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_afa809376ae94fea3e939b9e354f882d3}\label{classScena_afa809376ae94fea3e939b9e354f882d3}} 
+\index{Scena@{Scena}!Rysuj\+\_\+\+Scene@{Rysuj\+\_\+\+Scene}}
+\index{Rysuj\+\_\+\+Scene@{Rysuj\+\_\+\+Scene}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Rysuj\+\_\+\+Scene()}{Rysuj\_Scene()}}
+{\footnotesize\ttfamily void Scena\+::\+Rysuj\+\_\+\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Metoda umozliwia narysowanie obecnego stanu obiektow graficznych. 
+
+Metoda umozliwia narysowanie obecnego stanu obiektow graficznych za pomoca metody \hyperlink{classPzG_1_1LaczeDoGNUPlota_a065f5b8402737cc62b0ad4f66d028335}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota\+::\+Rysuj} wykorzystujacej w tym celu dane przekazane do programu {\itshape gnuplot} \mbox{\Hypertarget{classScena_ad718f45ba059441502ae63688acb43ba}\label{classScena_ad718f45ba059441502ae63688acb43ba}} 
+\index{Scena@{Scena}!Sprawdz\+Wynurzenie@{Sprawdz\+Wynurzenie}}
+\index{Sprawdz\+Wynurzenie@{Sprawdz\+Wynurzenie}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Sprawdz\+Wynurzenie()}{SprawdzWynurzenie()}}
+{\footnotesize\ttfamily bool Scena\+::\+Sprawdz\+Wynurzenie (\begin{DoxyParamCaption}\item[{\hyperlink{classDron}{Dron} \&}]{Element }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Realizuje sprawdzenie stopnia wynurzenia wskazanej ruchomej bryly. 
+
+Realizuje sprawdzenie stopnia wynurzenia wskazanej ruchomej bryly poprzez porownanie wspolrzednych skrajnych bryly po translacji oraz powierzchni falowanej oznaczajacej wode
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekty musza zostac wczesniej poprawnie zainicjalizowane 
+
+Sprawdzenie wynurzenia powinno wystapic po zarejestrowaniu bezkolizyjnej translacji 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em \hyperlink{classDron}{Dron}} & -\/ referencja do drona, umozliwiajaca sprawdzenie jego polozenia \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ zadany ruch spowodowalby wydostanie sie ponad maksymalne wynurzenie \\
+\hline
+{\em false} & -\/ zadany ruch jest dopuszczalny \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_af1091cf596813b9bfd9988296098fb72}\label{classScena_af1091cf596813b9bfd9988296098fb72}} 
+\index{Scena@{Scena}!Wez\+\_\+\+Drona1@{Wez\+\_\+\+Drona1}}
+\index{Wez\+\_\+\+Drona1@{Wez\+\_\+\+Drona1}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Wez\+\_\+\+Drona1()}{Wez\_Drona1()}}
+{\footnotesize\ttfamily \hyperlink{classDron}{Dron}\& Scena\+::\+Wez\+\_\+\+Drona1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego Dron1. 
+
+Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego Dron1 
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Dron1} & -\/ referencja do obiektu Dron1 klasy \hyperlink{classDron}{Dron} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classScena_a39bb68f2653e88942d49b52d0aa7da4d}\label{classScena_a39bb68f2653e88942d49b52d0aa7da4d}} 
+\index{Scena@{Scena}!Wyczysc\+Liste@{Wyczysc\+Liste}}
+\index{Wyczysc\+Liste@{Wyczysc\+Liste}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Wyczysc\+Liste()}{WyczyscListe()}}
+{\footnotesize\ttfamily void Scena\+::\+Wyczysc\+Liste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia zwolnienie pamieci listy. 
+
+Metoda umozliwia zwolnienie pamieci listy, usuwajac dynamicznie po kolei wszystkie jej obiekty, wykorzystujac petle zakresu 
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{classScena_a98ad54358eeb2b6f1ea3c4b1c16c72b4}\label{classScena_a98ad54358eeb2b6f1ea3c4b1c16c72b4}} 
+\index{Scena@{Scena}!Dron1@{Dron1}}
+\index{Dron1@{Dron1}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Dron1}{Dron1}}
+{\footnotesize\ttfamily \hyperlink{classDron}{Dron} Scena\+::\+Dron1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje zmienna interpretujaca ruchomego drona. 
+
+Pole przechowuje zmienna interpretujaca ruchomego drona za pomoca klasy \hyperlink{classDron}{Dron} \mbox{\Hypertarget{classScena_ae8d7d121ba09af12c456a6dfe6da316b}\label{classScena_ae8d7d121ba09af12c456a6dfe6da316b}} 
+\index{Scena@{Scena}!Lacze@{Lacze}}
+\index{Lacze@{Lacze}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Lacze}{Lacze}}
+{\footnotesize\ttfamily \hyperlink{classPzG_1_1LaczeDoGNUPlota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota} Scena\+::\+Lacze\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje zmienna umozliwiajaca przekazanie danych do programu {\itshape gnuplot}. 
+
+Pole przechowuje zmienna umozliwiajaca przekazywanie danych rysunku do programu {\itshape gnuplot} za pomoca klasy \hyperlink{classPzG_1_1LaczeDoGNUPlota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota} \mbox{\Hypertarget{classScena_ad892638f354c23efb22296381aedd04f}\label{classScena_ad892638f354c23efb22296381aedd04f}} 
+\index{Scena@{Scena}!Lista@{Lista}}
+\index{Lista@{Lista}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Lista}{Lista}}
+{\footnotesize\ttfamily std\+::list$<$\hyperlink{classObiektSceny}{Obiekt\+Sceny}$\ast$$>$ Scena\+::\+Lista\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje liste tworzonych dynamicznie przeszkód. 
+
+Pole przechowuje liste tworzonych dynamicznie przeszkod za pomoca obiektu typu std\+::list Lista okreslona jest dla klasy \hyperlink{classObiektSceny}{Obiekt\+Sceny} bedacej klasa bazowa kazdego rodzaju przeszkody -\/ podczas dynamicznego dodawania kolejnych obiektow nastepuje rzutowanie w gore na klase bazowa \mbox{\Hypertarget{classScena_a6053a6a241f17e12f47717a73d0988d6}\label{classScena_a6053a6a241f17e12f47717a73d0988d6}} 
+\index{Scena@{Scena}!Woda@{Woda}}
+\index{Woda@{Woda}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{Woda}{Woda}}
+{\footnotesize\ttfamily \hyperlink{classPowierzchniaFalowana}{Powierzchnia\+Falowana} Scena\+::\+Woda\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje zmienna interpretujaca powierzchnie wody. 
+
+Pole przechowuje zmienna interpretujaca powierzchnie wody za pomoca klasy \hyperlink{classPowierzchniaFalowana}{Powierzchnia\+Falowana} 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{Scena_8hh}{Scena.\+hh}\item 
+src/\hyperlink{Scena_8cpp}{Scena.\+cpp}\end{DoxyCompactItemize}

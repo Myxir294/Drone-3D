@@ -1,0 +1,177 @@
+\hypertarget{classProstopadloscian}{}\section{Dokumentacja klasy Prostopadloscian}
+\label{classProstopadloscian}\index{Prostopadloscian@{Prostopadloscian}}
+
+
+\hyperlink{classProstopadloscian}{Prostopadloscian} jako bryla przestrzenna o promieniu i srodku lokalnym.  
+
+
+
+
+{\ttfamily \#include $<$Prostopadloscian.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Prostopadloscian
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classProstopadloscian__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Prostopadloscian\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classProstopadloscian__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProstopadloscian_a432b8df2af37ba1a3596f500824eaffe}{Prostopadloscian} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. \end{DoxyCompactList}\item 
+void \hyperlink{classProstopadloscian_a148c8e01a4610bd61081b49789d3bc71}{Wyznacz\+\_\+\+Promien\+\_\+i\+\_\+\+Srodek} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia okreslenie promienia i srodka. \end{DoxyCompactList}\item 
+unsigned int const \hyperlink{classProstopadloscian_ae6b1528649b6034209ac763cc5881527}{Podaj\+Promien} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie dlugosci promienia. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} const \hyperlink{classProstopadloscian_ab9c86b023b990acffe00891c17ee596c}{Podaj\+Srodek\+Lok} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie wspolrzednych srodka. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classProstopadloscian_a9d182fd3d875a1e3928c8972727be6fe}{Wyznacz\+Wsp} () override
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classProstopadloscian_a06187a64d02fff11fc99e749abcef125}{\+\_\+promien}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje dlugosc promienia. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} \hyperlink{classProstopadloscian_a3aac0fbd53f5add1fe4e802204e7f609}{\+\_\+srodek\+\_\+lok}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje wspolrzedne srodka. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\hyperlink{classProstopadloscian}{Prostopadloscian} jako bryla przestrzenna o promieniu i srodku lokalnym. 
+
+Definicja klasy \hyperlink{classProstopadloscian}{Prostopadloscian}, sluzacej do interpretacji zadanego obiektu jako prostopadloscianu majacego okreslone wspolrzedne w ukladzie kartezjanskim. Ponadto obiekt zapamietuje wartosc swojego promienia oraz lokalne polozenie swojego srodka. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classProstopadloscian_a432b8df2af37ba1a3596f500824eaffe}\label{classProstopadloscian_a432b8df2af37ba1a3596f500824eaffe}} 
+\index{Prostopadloscian@{Prostopadloscian}!Prostopadloscian@{Prostopadloscian}}
+\index{Prostopadloscian@{Prostopadloscian}!Prostopadloscian@{Prostopadloscian}}
+\subsubsection{\texorpdfstring{Prostopadloscian()}{Prostopadloscian()}}
+{\footnotesize\ttfamily Prostopadloscian\+::\+Prostopadloscian (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor bezparametryczny. 
+
+Konstruktor bezparametryczny inicjalizujacy poczatkowa dlugosc promienia 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classProstopadloscian_ae6b1528649b6034209ac763cc5881527}\label{classProstopadloscian_ae6b1528649b6034209ac763cc5881527}} 
+\index{Prostopadloscian@{Prostopadloscian}!Podaj\+Promien@{Podaj\+Promien}}
+\index{Podaj\+Promien@{Podaj\+Promien}!Prostopadloscian@{Prostopadloscian}}
+\subsubsection{\texorpdfstring{Podaj\+Promien()}{PodajPromien()}}
+{\footnotesize\ttfamily unsigned int const Prostopadloscian\+::\+Podaj\+Promien (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie dlugosci promienia. 
+
+Metoda umozliwia pobranie wartosci promienia \begin{DoxyPrecond}{Warunek wstępny}
+Wartosc promienia musi byc wczesniej wyliczona 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wartosc} & {\itshape \+\_\+promien} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classProstopadloscian_ab9c86b023b990acffe00891c17ee596c}\label{classProstopadloscian_ab9c86b023b990acffe00891c17ee596c}} 
+\index{Prostopadloscian@{Prostopadloscian}!Podaj\+Srodek\+Lok@{Podaj\+Srodek\+Lok}}
+\index{Podaj\+Srodek\+Lok@{Podaj\+Srodek\+Lok}!Prostopadloscian@{Prostopadloscian}}
+\subsubsection{\texorpdfstring{Podaj\+Srodek\+Lok()}{PodajSrodekLok()}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} const Prostopadloscian\+::\+Podaj\+Srodek\+Lok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie wspolrzednych srodka. 
+
+Metoda umozliwia pobranie wartosci wspolrzednych srodka lokalnego bryly 
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wektor3D} & {\itshape \+\_\+srodek\+\_\+lok} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classProstopadloscian_a148c8e01a4610bd61081b49789d3bc71}\label{classProstopadloscian_a148c8e01a4610bd61081b49789d3bc71}} 
+\index{Prostopadloscian@{Prostopadloscian}!Wyznacz\+\_\+\+Promien\+\_\+i\+\_\+\+Srodek@{Wyznacz\+\_\+\+Promien\+\_\+i\+\_\+\+Srodek}}
+\index{Wyznacz\+\_\+\+Promien\+\_\+i\+\_\+\+Srodek@{Wyznacz\+\_\+\+Promien\+\_\+i\+\_\+\+Srodek}!Prostopadloscian@{Prostopadloscian}}
+\subsubsection{\texorpdfstring{Wyznacz\+\_\+\+Promien\+\_\+i\+\_\+\+Srodek()}{Wyznacz\_Promien\_i\_Srodek()}}
+{\footnotesize\ttfamily void Prostopadloscian\+::\+Wyznacz\+\_\+\+Promien\+\_\+i\+\_\+\+Srodek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia okreslenie promienia i srodka. 
+
+Metoda umozliwia wyznaczenie wspolrzednych srodka lokalnego oraz dlugosci promienia bryly, a nastepnie zapamietanie ich wartosci w polach obiektu \begin{DoxyPrecond}{Warunek wstępny}
+Wspolrzedne obiektu musza byc wczesniej poprawnie zapisane w pliku, ktorego nazwa zapisana jest przez pole {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne} 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classProstopadloscian_a9d182fd3d875a1e3928c8972727be6fe}\label{classProstopadloscian_a9d182fd3d875a1e3928c8972727be6fe}} 
+\index{Prostopadloscian@{Prostopadloscian}!Wyznacz\+Wsp@{Wyznacz\+Wsp}}
+\index{Wyznacz\+Wsp@{Wyznacz\+Wsp}!Prostopadloscian@{Prostopadloscian}}
+\subsubsection{\texorpdfstring{Wyznacz\+Wsp()}{WyznaczWsp()}}
+{\footnotesize\ttfamily bool Prostopadloscian\+::\+Wyznacz\+Wsp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly. 
+
+Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly, nadpisujac w odpowiedni sposob metode \hyperlink{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}{Obiekt\+Sceny\+::\+Wyznacz\+Wsp()}
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekt musi miec poprawnie zadane nazwy plikow ze wspolrzednymi 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ proces przebiegł pomyślnie \\
+\hline
+{\em false} & -\/ nie udało sie wyznaczyc wspolrzednych skrajnych \\
+\hline
+\end{DoxyRetVals}
+
+
+Implementuje \hyperlink{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}{Obiekt\+Sceny}.
+
+
+
+Reimplementowana w \hyperlink{classProstopadloscianSCN_acdd4a5c10fb6347ad65b1a516ee83b01}{Prostopadloscian\+S\+CN}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{classProstopadloscian_a06187a64d02fff11fc99e749abcef125}\label{classProstopadloscian_a06187a64d02fff11fc99e749abcef125}} 
+\index{Prostopadloscian@{Prostopadloscian}!\+\_\+promien@{\+\_\+promien}}
+\index{\+\_\+promien@{\+\_\+promien}!Prostopadloscian@{Prostopadloscian}}
+\subsubsection{\texorpdfstring{\+\_\+promien}{\_promien}}
+{\footnotesize\ttfamily unsigned int Prostopadloscian\+::\+\_\+promien\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje dlugosc promienia. 
+
+Pole przechowuje dlugosc promienia bryly \mbox{\Hypertarget{classProstopadloscian_a3aac0fbd53f5add1fe4e802204e7f609}\label{classProstopadloscian_a3aac0fbd53f5add1fe4e802204e7f609}} 
+\index{Prostopadloscian@{Prostopadloscian}!\+\_\+srodek\+\_\+lok@{\+\_\+srodek\+\_\+lok}}
+\index{\+\_\+srodek\+\_\+lok@{\+\_\+srodek\+\_\+lok}!Prostopadloscian@{Prostopadloscian}}
+\subsubsection{\texorpdfstring{\+\_\+srodek\+\_\+lok}{\_srodek\_lok}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} Prostopadloscian\+::\+\_\+srodek\+\_\+lok\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje wspolrzedne srodka. 
+
+Pole przechowuje pierwotne wspolrzedne srodka bryly 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{Prostopadloscian_8hh}{Prostopadloscian.\+hh}\item 
+src/\hyperlink{Prostopadloscian_8cpp}{Prostopadloscian.\+cpp}\end{DoxyCompactItemize}

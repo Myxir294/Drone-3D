@@ -1,0 +1,296 @@
+\hypertarget{classProstopadloscianSCN}{}\section{Dokumentacja klasy Prostopadloscian\+S\+CN}
+\label{classProstopadloscianSCN}\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+
+
+\hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN} jako \hyperlink{classProstopadloscian}{Prostopadloscian} w ukladzie globalnym.  
+
+
+
+
+{\ttfamily \#include $<$Prostopadloscian\+S\+C\+N.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Prostopadloscian\+S\+CN
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classProstopadloscianSCN__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Prostopadloscian\+S\+CN\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classProstopadloscianSCN__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProstopadloscianSCN_a8288627cc69c54812c06be68950615f5}{Prostopadloscian\+S\+CN} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor obiektu \hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN}. \end{DoxyCompactList}\item 
+void \hyperlink{classProstopadloscianSCN_aedacd1e8362390241287296f5107d493}{Wybierz\+Plik\+Glob} (const char $\ast$Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi globalnymi. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{classProstopadloscianSCN_a203c4bf0a0e65ed9896199e7a6dc498b}{Podaj\+Nazwe\+Pliku\+Glob} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie nazwy przypisanego pliku ze wspolrzednymi globalnymi. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classProstopadloscianSCN_acdd4a5c10fb6347ad65b1a516ee83b01}{Wyznacz\+Wsp} () override
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia wyznaczenie obecnych wspolrzednych skrajnych bryly. \end{DoxyCompactList}\item 
+bool \hyperlink{classProstopadloscianSCN_ada3c51233b828c9ee8466a1c4270906b}{Oblicz\+Globalne} () const
+\begin{DoxyCompactList}\small\item\em Realizuje przeksztalcenie wspolrzednych lokalnych do ukladu globalnego. \end{DoxyCompactList}\item 
+bool \hyperlink{classProstopadloscianSCN_a397c310956e20068dc3588ee4d4a9c87}{Wybierz\+Pliki} (const char $\ast$Nazwa\+Pliku\+We, const char $\ast$Nazwa\+Pliku\+Wy)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia przypisanie obiektowi dwoch plikow. \end{DoxyCompactList}\item 
+void \hyperlink{classProstopadloscianSCN_a1f9b715a50dd0e84fb6391dcccc962e8}{Zmien\+\_\+o\+\_\+kat} (int kat)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zmiane orientacji bryly wokol osi OZ. \end{DoxyCompactList}\item 
+void \hyperlink{classProstopadloscianSCN_afa54ddf8455489f51aa945afcafee27f}{Zmien\+\_\+o\+\_\+translacje} (\hyperlink{classSWektor}{Wektor3D} Translacja)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zmiane polozenia bryly. \end{DoxyCompactList}\item 
+int const \hyperlink{classProstopadloscianSCN_a4d1aaf928130a4d48a0cdc9ab79917be}{Podaj\+Kat\+Orientacji} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie wartosci kata orientacji bryly. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} const \hyperlink{classProstopadloscianSCN_ae0157d734326422f325c9af1894292ed}{Podaj\+Polozenie} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie wartosci wektora polozenia bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classProstopadloscianSCN_ab6ed51a7c62d80bca489497ad60a861c}{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje nazwe pliku z danymi globalnymi. \end{DoxyCompactList}\item 
+int \hyperlink{classProstopadloscianSCN_ab47d8efc8b2817cabf5ea70915a8f5dc}{\+\_\+\+Kat\+\_\+\+Orientacji}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje miare kata orientacji. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} \hyperlink{classProstopadloscianSCN_a4ca4e6e7fe68e627d4a3f6373f1482ad}{\+\_\+\+Wek\+\_\+\+Translacji}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje wektor translacji bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN} jako \hyperlink{classProstopadloscian}{Prostopadloscian} w ukladzie globalnym. 
+
+Definicja klasy \hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN}, sluzacej do interpretacji zadanego prostopadloscianu jako obiektu rozbudowanego o mozliwosc okreslenia orientacji i przesuniecia w ukladzie globalnym 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classProstopadloscianSCN_a8288627cc69c54812c06be68950615f5}\label{classProstopadloscianSCN_a8288627cc69c54812c06be68950615f5}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Prostopadloscian\+S\+C\+N()}{ProstopadloscianSCN()}}
+{\footnotesize\ttfamily Prostopadloscian\+S\+C\+N\+::\+Prostopadloscian\+S\+CN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor obiektu \hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN}. 
+
+Konstruktor bezparametryczny obiektu \hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN}, ustawiajacy domyslna wartosc kata orientacji bryly na 0 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classProstopadloscianSCN_ada3c51233b828c9ee8466a1c4270906b}\label{classProstopadloscianSCN_ada3c51233b828c9ee8466a1c4270906b}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Oblicz\+Globalne@{Oblicz\+Globalne}}
+\index{Oblicz\+Globalne@{Oblicz\+Globalne}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Oblicz\+Globalne()}{ObliczGlobalne()}}
+{\footnotesize\ttfamily bool Prostopadloscian\+S\+C\+N\+::\+Oblicz\+Globalne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Realizuje przeksztalcenie wspolrzednych lokalnych do ukladu globalnego. 
+
+Realizuje przeksztalcenie wspolrzednych lokalnych do ukladu globalnego biorac pod uwage kat orientacji oraz wektor translacji bryly
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekt musi miec poprawnie zadane nazwy plikow ze wspolrzednymi 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ operacja przebiegla pomyslnie \\
+\hline
+{\em false} & -\/ nie udalo sie okreslic wspolrzednych globalnych -\/ blad prawidlowego odczytania wspolrzednych z pliku {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne} lub blad zapisu do pliku {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classProstopadloscianSCN_a4d1aaf928130a4d48a0cdc9ab79917be}\label{classProstopadloscianSCN_a4d1aaf928130a4d48a0cdc9ab79917be}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Podaj\+Kat\+Orientacji@{Podaj\+Kat\+Orientacji}}
+\index{Podaj\+Kat\+Orientacji@{Podaj\+Kat\+Orientacji}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Podaj\+Kat\+Orientacji()}{PodajKatOrientacji()}}
+{\footnotesize\ttfamily int const Prostopadloscian\+S\+C\+N\+::\+Podaj\+Kat\+Orientacji (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie wartosci kata orientacji bryly. 
+
+Metoda umozliwia pobranie wartosci okreslonego kata orientacji bryly 
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wartosc} & {\itshape \+\_\+\+Kat\+\_\+\+Orientacji} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classProstopadloscianSCN_a203c4bf0a0e65ed9896199e7a6dc498b}\label{classProstopadloscianSCN_a203c4bf0a0e65ed9896199e7a6dc498b}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Podaj\+Nazwe\+Pliku\+Glob@{Podaj\+Nazwe\+Pliku\+Glob}}
+\index{Podaj\+Nazwe\+Pliku\+Glob@{Podaj\+Nazwe\+Pliku\+Glob}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Podaj\+Nazwe\+Pliku\+Glob()}{PodajNazwePlikuGlob()}}
+{\footnotesize\ttfamily const std\+::string Prostopadloscian\+S\+C\+N\+::\+Podaj\+Nazwe\+Pliku\+Glob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie nazwy przypisanego pliku ze wspolrzednymi globalnymi. 
+
+Metoda umozliwia pobranie nazwy przypisanego pliku, w ktorym beda znajdowac sie wyliczone wspolrzedne globalne obiektu \begin{DoxyPrecond}{Warunek wstępny}
+Nazwa pliku ze wspolrzednymi globalnymi musi byc wczesniej okreslona 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Parametr} & {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classProstopadloscianSCN_ae0157d734326422f325c9af1894292ed}\label{classProstopadloscianSCN_ae0157d734326422f325c9af1894292ed}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Podaj\+Polozenie@{Podaj\+Polozenie}}
+\index{Podaj\+Polozenie@{Podaj\+Polozenie}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Podaj\+Polozenie()}{PodajPolozenie()}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} const Prostopadloscian\+S\+C\+N\+::\+Podaj\+Polozenie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie wartosci wektora polozenia bryly. 
+
+Metoda umozliwia pobranie wartosci okreslonego wektora polozenia bryly 
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wektor3D} & {\itshape \+\_\+\+Wek\+\_\+\+Translacji} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classProstopadloscianSCN_aedacd1e8362390241287296f5107d493}\label{classProstopadloscianSCN_aedacd1e8362390241287296f5107d493}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Wybierz\+Plik\+Glob@{Wybierz\+Plik\+Glob}}
+\index{Wybierz\+Plik\+Glob@{Wybierz\+Plik\+Glob}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Wybierz\+Plik\+Glob()}{WybierzPlikGlob()}}
+{\footnotesize\ttfamily void Prostopadloscian\+S\+C\+N\+::\+Wybierz\+Plik\+Glob (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi globalnymi. 
+
+Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi globalnymi
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em Nazwa\+Pliku} & -\/ Nazwa pliku ze wspolrzednymi globalnymi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classProstopadloscianSCN_a397c310956e20068dc3588ee4d4a9c87}\label{classProstopadloscianSCN_a397c310956e20068dc3588ee4d4a9c87}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Wybierz\+Pliki@{Wybierz\+Pliki}}
+\index{Wybierz\+Pliki@{Wybierz\+Pliki}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Wybierz\+Pliki()}{WybierzPliki()}}
+{\footnotesize\ttfamily bool Prostopadloscian\+S\+C\+N\+::\+Wybierz\+Pliki (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku\+We,  }\item[{const char $\ast$}]{Nazwa\+Pliku\+Wy }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia przypisanie obiektowi dwoch plikow. 
+
+Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi poczatkowymi (lokalnymi) oraz pliku w ktorym zostana zapisane wspolrzedne przeksztalcone do ukladu globalnego (globalne). Wykorzystuje w tym celu metody \hyperlink{classObiektSceny_a84c19442a6a0757a1702e72effbb66d9}{Obiekt\+Sceny\+::\+Wybierz\+Plik\+Lok} \hyperlink{classProstopadloscianSCN_aedacd1e8362390241287296f5107d493}{Prostopadloscian\+S\+C\+N\+::\+Wybierz\+Plik\+Glob} \hyperlink{classProstopadloscianSCN_ada3c51233b828c9ee8466a1c4270906b}{Prostopadloscian\+S\+C\+N\+::\+Oblicz\+Globalne}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em Nazwa\+Pliku\+We} & -\/ Nazwa pliku ze wspolrzednymi lokalnymi \\
+\hline
+\mbox{\tt in}  & {\em Nazwa\+Pliku\+Wy} & -\/ Nazwa pliku ze wspolrzednymi lokalnymi \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ operacja przebiegla pomyslnie \\
+\hline
+{\em false} & -\/ metoda \hyperlink{classProstopadloscianSCN_ada3c51233b828c9ee8466a1c4270906b}{Prostopadloscian\+S\+C\+N\+::\+Oblicz\+Globalne} nie byla w stanie poprawnie wykonac operacji okreslenia i zapisania wspolrzednych globalnych \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classProstopadloscianSCN_acdd4a5c10fb6347ad65b1a516ee83b01}\label{classProstopadloscianSCN_acdd4a5c10fb6347ad65b1a516ee83b01}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Wyznacz\+Wsp@{Wyznacz\+Wsp}}
+\index{Wyznacz\+Wsp@{Wyznacz\+Wsp}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Wyznacz\+Wsp()}{WyznaczWsp()}}
+{\footnotesize\ttfamily bool Prostopadloscian\+S\+C\+N\+::\+Wyznacz\+Wsp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda umozliwia wyznaczenie obecnych wspolrzednych skrajnych bryly. 
+
+Metoda umozliwia wyznaczenie obecnych wspolrzednych skrajnych bryly, nadpisujac w odpowiedni sposob metode \hyperlink{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}{Obiekt\+Sceny\+::\+Wyznacz\+Wsp()}
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekt musi miec poprawnie zadane nazwy plikow ze wspolrzednymi 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ proces przebiegł pomyślnie \\
+\hline
+{\em false} & -\/ nie udało sie wyznaczyc wspolrzednych skrajnych \\
+\hline
+\end{DoxyRetVals}
+
+
+Reimplementowana z \hyperlink{classProstopadloscian_a9d182fd3d875a1e3928c8972727be6fe}{Prostopadloscian}.
+
+\mbox{\Hypertarget{classProstopadloscianSCN_a1f9b715a50dd0e84fb6391dcccc962e8}\label{classProstopadloscianSCN_a1f9b715a50dd0e84fb6391dcccc962e8}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Zmien\+\_\+o\+\_\+kat@{Zmien\+\_\+o\+\_\+kat}}
+\index{Zmien\+\_\+o\+\_\+kat@{Zmien\+\_\+o\+\_\+kat}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Zmien\+\_\+o\+\_\+kat()}{Zmien\_o\_kat()}}
+{\footnotesize\ttfamily void Prostopadloscian\+S\+C\+N\+::\+Zmien\+\_\+o\+\_\+kat (\begin{DoxyParamCaption}\item[{int}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia zmiane orientacji bryly wokol osi OZ. 
+
+Metoda umozliwia zmiane kata orientacji bryly zapisanego w polu {\itshape \+\_\+\+Kat\+\_\+\+Orientacji} zwiekszajac ja o wartosc zadana w parametrze {\itshape kat}. Jezeli wartosc kata orientacji wyniesie 360 lub -\/360, zostaje ona wyzerowana w celu zmniejszenia bledow dokladnosci obliczen
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em kat} & -\/ Kat o jaki zmieniona zostanie orientacja bryly \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classProstopadloscianSCN_afa54ddf8455489f51aa945afcafee27f}\label{classProstopadloscianSCN_afa54ddf8455489f51aa945afcafee27f}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!Zmien\+\_\+o\+\_\+translacje@{Zmien\+\_\+o\+\_\+translacje}}
+\index{Zmien\+\_\+o\+\_\+translacje@{Zmien\+\_\+o\+\_\+translacje}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{Zmien\+\_\+o\+\_\+translacje()}{Zmien\_o\_translacje()}}
+{\footnotesize\ttfamily void Prostopadloscian\+S\+C\+N\+::\+Zmien\+\_\+o\+\_\+translacje (\begin{DoxyParamCaption}\item[{\hyperlink{classSWektor}{Wektor3D}}]{Translacja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia zmiane polozenia bryly. 
+
+Metoda umozliwia zmiane wektora polozenia bryly zapisanego w polu {\itshape \+\_\+\+Wek\+\_\+\+Translacji} zwiekszajac ja o wektor zadany w parametrze {\itshape Translacja} 
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em Translacja} & -\/ Wektor o jaki zwiekszony zostanie wektor translacji bryly \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{classProstopadloscianSCN_ab47d8efc8b2817cabf5ea70915a8f5dc}\label{classProstopadloscianSCN_ab47d8efc8b2817cabf5ea70915a8f5dc}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!\+\_\+\+Kat\+\_\+\+Orientacji@{\+\_\+\+Kat\+\_\+\+Orientacji}}
+\index{\+\_\+\+Kat\+\_\+\+Orientacji@{\+\_\+\+Kat\+\_\+\+Orientacji}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{\+\_\+\+Kat\+\_\+\+Orientacji}{\_Kat\_Orientacji}}
+{\footnotesize\ttfamily int Prostopadloscian\+S\+C\+N\+::\+\_\+\+Kat\+\_\+\+Orientacji\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje miare kata orientacji. 
+
+Pole przechowuje miare kata orientacji bryly okreslonego w stopniach \mbox{\Hypertarget{classProstopadloscianSCN_ab6ed51a7c62d80bca489497ad60a861c}\label{classProstopadloscianSCN_ab6ed51a7c62d80bca489497ad60a861c}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne@{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne}}
+\index{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne@{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne}{\_Plik\_Wsp\_Globalne}}
+{\footnotesize\ttfamily std\+::string Prostopadloscian\+S\+C\+N\+::\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje nazwe pliku z danymi globalnymi. 
+
+Pole przechowuje nazwe pliku z danymi globalnymi \mbox{\Hypertarget{classProstopadloscianSCN_a4ca4e6e7fe68e627d4a3f6373f1482ad}\label{classProstopadloscianSCN_a4ca4e6e7fe68e627d4a3f6373f1482ad}} 
+\index{Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}!\+\_\+\+Wek\+\_\+\+Translacji@{\+\_\+\+Wek\+\_\+\+Translacji}}
+\index{\+\_\+\+Wek\+\_\+\+Translacji@{\+\_\+\+Wek\+\_\+\+Translacji}!Prostopadloscian\+S\+CN@{Prostopadloscian\+S\+CN}}
+\subsubsection{\texorpdfstring{\+\_\+\+Wek\+\_\+\+Translacji}{\_Wek\_Translacji}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} Prostopadloscian\+S\+C\+N\+::\+\_\+\+Wek\+\_\+\+Translacji\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje wektor translacji bryly. 
+
+Pole przechowuje wektor translacji bryly -\/ domyslnie wektor zerowy 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{ProstopadloscianSCN_8hh}{Prostopadloscian\+S\+C\+N.\+hh}\item 
+src/\hyperlink{ProstopadloscianSCN_8cpp}{Prostopadloscian\+S\+C\+N.\+cpp}\end{DoxyCompactItemize}

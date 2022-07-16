@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Podwodny II: Plik źródłowy inc/ObiektSceny.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Podwodny II
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ObiektSceny.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ObiektSceny_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OBIEKTSCENY_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OBIEKTSCENY_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="typy__danych_8hh.html">typy_danych.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classObiektSceny.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classObiektSceny.html">ObiektSceny</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classObiektSceny.html#abd56bb7b6b0db7ecef8055ce16131358">   38</a></span>&#160;    std::string <a class="code" href="classObiektSceny.html#abd56bb7b6b0db7ecef8055ce16131358">_Plik_Wsp_Lokalne</a>;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classObiektSceny.html#a09bfe62996fd73bbc7876524b211ce20">   45</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <a class="code" href="classObiektSceny.html#a09bfe62996fd73bbc7876524b211ce20">_Wsp_Max</a>;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classObiektSceny.html#a7395dc947479c40e29636cd8e8c5bfd3">   52</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <a class="code" href="classObiektSceny.html#a7395dc947479c40e29636cd8e8c5bfd3">_Wsp_Min</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classObiektSceny.html#a3ac6cda78772edd23c39b3827c1695d8">   61</a></span>&#160;    <a class="code" href="classObiektSceny.html#a3ac6cda78772edd23c39b3827c1695d8">ObiektSceny</a>() {std::cout &lt;&lt; <span class="stringliteral">&quot;Stworzenie obiektu sceny&quot;</span> &lt;&lt; std::endl;}</div><div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classObiektSceny.html#ab34aec7f37d73f5b1cc4d3268ac39af9">   68</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classObiektSceny.html#ab34aec7f37d73f5b1cc4d3268ac39af9">~ObiektSceny</a>() {std::cout &lt;&lt; <span class="stringliteral">&quot;Usuniecie obiektu sceny&quot;</span> &lt;&lt; std::endl;}</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classObiektSceny.html#a24dd0332c0755d7155128639a9a3e2b4">WyznaczWsp</a>() = 0;</div><div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classObiektSceny.html#a84c19442a6a0757a1702e72effbb66d9">   92</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObiektSceny.html#a84c19442a6a0757a1702e72effbb66d9">WybierzPlikLok</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *NazwaPliku){_Plik_Wsp_Lokalne = NazwaPliku;}</div><div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classObiektSceny.html#abe634a96ea225f2e21b3dead5207d122">  101</a></span>&#160;    <span class="keyword">const</span> std::string <a class="code" href="classObiektSceny.html#abe634a96ea225f2e21b3dead5207d122">PodajNazwePlikuLok</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classObiektSceny.html#abd56bb7b6b0db7ecef8055ce16131358">_Plik_Wsp_Lokalne</a>;}</div><div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classObiektSceny.html#ae6e0207ad7d44742b2973e92382619bb">  109</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <span class="keyword">const</span> <a class="code" href="classObiektSceny.html#ae6e0207ad7d44742b2973e92382619bb">PodajWspMax</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classObiektSceny.html#a09bfe62996fd73bbc7876524b211ce20">_Wsp_Max</a>;}</div><div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classObiektSceny.html#a5a66f5506b5e30e47040d31c8b751c7a">  117</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a>&amp; <a class="code" href="classObiektSceny.html#a5a66f5506b5e30e47040d31c8b751c7a">PodajWspMax</a>() {<span class="keywordflow">return</span> <a class="code" href="classObiektSceny.html#a09bfe62996fd73bbc7876524b211ce20">_Wsp_Max</a>;}</div><div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classObiektSceny.html#a81f3173a7b40fdf30fd0488e470b86a6">  125</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <span class="keyword">const</span> <a class="code" href="classObiektSceny.html#a81f3173a7b40fdf30fd0488e470b86a6">PodajWspMin</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classObiektSceny.html#a7395dc947479c40e29636cd8e8c5bfd3">_Wsp_Min</a>;}</div><div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classObiektSceny.html#a2f660e413ae6ed3eb0df7fac9881cf8a">  133</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a>&amp; <a class="code" href="classObiektSceny.html#a2f660e413ae6ed3eb0df7fac9881cf8a">PodajWspMin</a>() {<span class="keywordflow">return</span> <a class="code" href="classObiektSceny.html#a7395dc947479c40e29636cd8e8c5bfd3">_Wsp_Min</a>;}</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classObiektSceny_html_a3ac6cda78772edd23c39b3827c1695d8"><div class="ttname"><a href="classObiektSceny.html#a3ac6cda78772edd23c39b3827c1695d8">ObiektSceny::ObiektSceny</a></div><div class="ttdeci">ObiektSceny()</div><div class="ttdoc">Konstruktor bezparametryczny. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:61</div></div>
+<div class="ttc" id="classObiektSceny_html_a09bfe62996fd73bbc7876524b211ce20"><div class="ttname"><a href="classObiektSceny.html#a09bfe62996fd73bbc7876524b211ce20">ObiektSceny::_Wsp_Max</a></div><div class="ttdeci">Wektor3D _Wsp_Max</div><div class="ttdoc">Pole przechowuje wspolrzedne maksymalne. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:45</div></div>
+<div class="ttc" id="classObiektSceny_html"><div class="ttname"><a href="classObiektSceny.html">ObiektSceny</a></div><div class="ttdoc">Definicja klasy ObiektSceny. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:31</div></div>
+<div class="ttc" id="classObiektSceny_html_ab34aec7f37d73f5b1cc4d3268ac39af9"><div class="ttname"><a href="classObiektSceny.html#ab34aec7f37d73f5b1cc4d3268ac39af9">ObiektSceny::~ObiektSceny</a></div><div class="ttdeci">virtual ~ObiektSceny()</div><div class="ttdoc">Destruktor. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:68</div></div>
+<div class="ttc" id="classObiektSceny_html_a24dd0332c0755d7155128639a9a3e2b4"><div class="ttname"><a href="classObiektSceny.html#a24dd0332c0755d7155128639a9a3e2b4">ObiektSceny::WyznaczWsp</a></div><div class="ttdeci">virtual bool WyznaczWsp()=0</div><div class="ttdoc">Pierwotna wersja metodu umozliwiajacej wyznaczenie wspolrzednych skrajnych bryly. ...</div></div>
+<div class="ttc" id="typy__danych_8hh_html"><div class="ttname"><a href="typy__danych_8hh.html">typy_danych.hh</a></div><div class="ttdoc">Zawiera definicję Wektora3D oraz Macierzy3x3. </div></div>
+<div class="ttc" id="classObiektSceny_html_abd56bb7b6b0db7ecef8055ce16131358"><div class="ttname"><a href="classObiektSceny.html#abd56bb7b6b0db7ecef8055ce16131358">ObiektSceny::_Plik_Wsp_Lokalne</a></div><div class="ttdeci">std::string _Plik_Wsp_Lokalne</div><div class="ttdoc">Pole przechowuje nazwe pliku z danymi lokalnymi. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:38</div></div>
+<div class="ttc" id="classObiektSceny_html_a81f3173a7b40fdf30fd0488e470b86a6"><div class="ttname"><a href="classObiektSceny.html#a81f3173a7b40fdf30fd0488e470b86a6">ObiektSceny::PodajWspMin</a></div><div class="ttdeci">Wektor3D const PodajWspMin() const</div><div class="ttdoc">Metoda umozliwia pobranie wartosci wspolrzednych minimalnych. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:125</div></div>
+<div class="ttc" id="classObiektSceny_html_a7395dc947479c40e29636cd8e8c5bfd3"><div class="ttname"><a href="classObiektSceny.html#a7395dc947479c40e29636cd8e8c5bfd3">ObiektSceny::_Wsp_Min</a></div><div class="ttdeci">Wektor3D _Wsp_Min</div><div class="ttdoc">Pole przechowuje wspolrzedne minimalne. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:52</div></div>
+<div class="ttc" id="classObiektSceny_html_a5a66f5506b5e30e47040d31c8b751c7a"><div class="ttname"><a href="classObiektSceny.html#a5a66f5506b5e30e47040d31c8b751c7a">ObiektSceny::PodajWspMax</a></div><div class="ttdeci">Wektor3D &amp; PodajWspMax()</div><div class="ttdoc">Metoda umozliwia pobranie i modyfikacje wartosci wspolrzednych maksymalnych. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:117</div></div>
+<div class="ttc" id="classSWektor_html"><div class="ttname"><a href="classSWektor.html">SWektor&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="classObiektSceny_html_ae6e0207ad7d44742b2973e92382619bb"><div class="ttname"><a href="classObiektSceny.html#ae6e0207ad7d44742b2973e92382619bb">ObiektSceny::PodajWspMax</a></div><div class="ttdeci">Wektor3D const PodajWspMax() const</div><div class="ttdoc">Metoda umozliwia pobranie wartosci wspolrzednych maksymalnych. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:109</div></div>
+<div class="ttc" id="classObiektSceny_html_a2f660e413ae6ed3eb0df7fac9881cf8a"><div class="ttname"><a href="classObiektSceny.html#a2f660e413ae6ed3eb0df7fac9881cf8a">ObiektSceny::PodajWspMin</a></div><div class="ttdeci">Wektor3D &amp; PodajWspMin()</div><div class="ttdoc">Metoda umozliwia pobranie i modyfikacje wartosci wspolrzednych minimalnych. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:133</div></div>
+<div class="ttc" id="classObiektSceny_html_a84c19442a6a0757a1702e72effbb66d9"><div class="ttname"><a href="classObiektSceny.html#a84c19442a6a0757a1702e72effbb66d9">ObiektSceny::WybierzPlikLok</a></div><div class="ttdeci">void WybierzPlikLok(const char *NazwaPliku)</div><div class="ttdoc">Metoda umozliwia przypisanie obiektowi pliku. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:92</div></div>
+<div class="ttc" id="classObiektSceny_html_abe634a96ea225f2e21b3dead5207d122"><div class="ttname"><a href="classObiektSceny.html#abe634a96ea225f2e21b3dead5207d122">ObiektSceny::PodajNazwePlikuLok</a></div><div class="ttdeci">const std::string PodajNazwePlikuLok() const</div><div class="ttdoc">Metoda umozliwia pobranie nazwy przypisanego pliku. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:101</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

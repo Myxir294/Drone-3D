@@ -1,0 +1,11 @@
+<map id="Scena" name="Scena">
+<area shape="rect" id="node2" href="$classPzG_1_1LaczeDoGNUPlota.html" title="Klasa realizuje interfejs do programu GNUPlot. " alt="" coords="5,404,173,431"/>
+<area shape="rect" id="node3" href="$classPowierzchniaFalowana.html" title="PowierzchniaFalowana jako obiekt graficzny. " alt="" coords="141,249,297,276"/>
+<area shape="rect" id="node4" href="$classObiektSceny.html" title="Definicja klasy ObiektSceny. " alt="" coords="179,109,277,136"/>
+<area shape="rect" id="node8" href="$classProstopadloscian.html" title="Prostopadloscian jako bryla przestrzenna o promieniu i srodku lokalnym. " alt="" coords="263,199,385,225"/>
+<area shape="rect" id="node10" href="$classGraniastoslup.html" title="Graniastoslup jako bryla przestrzenna o promieniu i srodku lokalnym. " alt="" coords="410,199,513,225"/>
+<area shape="rect" id="node5" href="$classSWektor.html" title="SWektor\&lt; double, 3 \&gt;" alt="" coords="250,5,401,32"/>
+<area shape="rect" id="node7" href="$classProstopadloscianSCN.html" title="ProstopadloscianSCN jako Prostopadloscian w ukladzie globalnym. " alt="" coords="249,300,399,327"/>
+<area shape="rect" id="node9" href="$classGraniastoslupSCN.html" title="GraniastoslupSCN jako Graniastoslup w ukladzie globalnym. " alt="" coords="424,300,555,327"/>
+<area shape="rect" id="node6" href="$classDron.html" title="Definicja klasy Dron. " alt="" coords="299,404,349,431"/>
+</map>

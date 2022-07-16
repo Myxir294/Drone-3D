@@ -1,0 +1,347 @@
+\hypertarget{classGraniastoslupSCN}{}\section{Dokumentacja klasy Graniastoslup\+S\+CN}
+\label{classGraniastoslupSCN}\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+
+
+\hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} jako \hyperlink{classGraniastoslup}{Graniastoslup} w ukladzie globalnym.  
+
+
+
+
+{\ttfamily \#include $<$Graniastoslup\+S\+C\+N.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Graniastoslup\+S\+CN
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classGraniastoslupSCN__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Graniastoslup\+S\+CN\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classGraniastoslupSCN__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGraniastoslupSCN_a1cf442360ec14fc7fa22af9ddefd1d35}{Graniastoslup\+S\+CN} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor obiektu \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN}. \end{DoxyCompactList}\item 
+void \hyperlink{classGraniastoslupSCN_a6c761ec9040c78b88e8f927bbe1fefb2}{Wybierz\+Plik\+Glob} (const char $\ast$Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi globalnymi. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{classGraniastoslupSCN_ad3d658eb048fd25af6a31a6416e02908}{Podaj\+Nazwe\+Pliku\+Glob} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie nazwy przypisanego pliku ze wspolrzednymi globalnymi. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classGraniastoslupSCN_a096492db05264adae9306f5fb50cc3c9}{Wyznacz\+Wsp} () override
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia wyznaczenie obecnych wspolrzednych skrajnych bryly. \end{DoxyCompactList}\item 
+bool \hyperlink{classGraniastoslupSCN_a4bf899d8eba989560c5955748c2c5204}{Oblicz\+Globalne} () const
+\begin{DoxyCompactList}\small\item\em Realizuje przeksztalcenie wspolrzednych lokalnych do ukladu globalnego. \end{DoxyCompactList}\item 
+bool \hyperlink{classGraniastoslupSCN_a279b52ec2cb4c39f1025089695388a2a}{Wybierz\+Pliki} (const char $\ast$Nazwa\+Pliku\+We, const char $\ast$Nazwa\+Pliku\+Wy, unsigned int numer)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia przypisanie obiektowi dwoch plikow. \end{DoxyCompactList}\item 
+void \hyperlink{classGraniastoslupSCN_af074e119fe4e8a34d4be489d4d5512fe}{Zmien\+\_\+o\+\_\+kat} (int kat)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zmiane orientacji bryly wokol osi OZ. \end{DoxyCompactList}\item 
+void \hyperlink{classGraniastoslupSCN_a66b1dda997b41aaa596ad6b953f06c8c}{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny} (int kat)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zmiane orientacji bryly wokol osi OX. \end{DoxyCompactList}\item 
+void \hyperlink{classGraniastoslupSCN_a65db4e5bc006a5969f5a2ebb8b2adaea}{Zmien\+\_\+o\+\_\+translacje} (\hyperlink{classSWektor}{Wektor3D} Translacja)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zmiane polozenia bryly. \end{DoxyCompactList}\item 
+int const \hyperlink{classGraniastoslupSCN_a22fa17548fa2785b1c9850bb166fa1e7}{Podaj\+Kat\+Orientacji} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie wartosci kata orientacji bryly. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} const \hyperlink{classGraniastoslupSCN_a48c31869ef862c487bb511d8a121005b}{Podaj\+Polozenie} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie wartosci wektora polozenia bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGraniastoslupSCN_a848f8d3f0298dda442fab7acec295f80}{Zmien\+\_\+kat\+\_\+wlasny} ()
+\begin{DoxyCompactList}\small\item\em Zmiana kata wlasnego, tj. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classGraniastoslupSCN_abd53a52e6fa9127c98d3922b4134fe67}{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje nazwe pliku z danymi globalnymi. \end{DoxyCompactList}\item 
+int \hyperlink{classGraniastoslupSCN_a9fd5ceb4bf6119ef152db01d43d4925c}{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje miare kata orientacji\+OZ. \end{DoxyCompactList}\item 
+int \hyperlink{classGraniastoslupSCN_a6c82bb652a2a7ebefc166864af4be36a}{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje miare kata orientacji\+OX. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} \hyperlink{classGraniastoslupSCN_a8d6e1399862324d18f3dee74c41212d0}{\+\_\+\+Wek\+\_\+\+Translacji}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje wektor translacji bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} jako \hyperlink{classGraniastoslup}{Graniastoslup} w ukladzie globalnym. 
+
+Definicja klasy \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN}, sluzacej do interpretacji zadanego graniastoslupa jako obiektu rozbudowanego o mozliwosc okreslenia orientacji i przesuniecia w ukladzie globalnym 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classGraniastoslupSCN_a1cf442360ec14fc7fa22af9ddefd1d35}\label{classGraniastoslupSCN_a1cf442360ec14fc7fa22af9ddefd1d35}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Graniastoslup\+S\+C\+N()}{GraniastoslupSCN()}}
+{\footnotesize\ttfamily Graniastoslup\+S\+C\+N\+::\+Graniastoslup\+S\+CN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor obiektu \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN}. 
+
+Konstruktor bezparametryczny obiektu \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN}, ustawiajacy domyslna wartosc katow orientacji bryly na 0 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classGraniastoslupSCN_a4bf899d8eba989560c5955748c2c5204}\label{classGraniastoslupSCN_a4bf899d8eba989560c5955748c2c5204}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Oblicz\+Globalne@{Oblicz\+Globalne}}
+\index{Oblicz\+Globalne@{Oblicz\+Globalne}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Oblicz\+Globalne()}{ObliczGlobalne()}}
+{\footnotesize\ttfamily bool Graniastoslup\+S\+C\+N\+::\+Oblicz\+Globalne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Realizuje przeksztalcenie wspolrzednych lokalnych do ukladu globalnego. 
+
+Realizuje przeksztalcenie wspolrzednych lokalnych do ukladu globalnego biorac pod uwage kat orientacji oraz wektor translacji bryly
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekt musi miec poprawnie zadane nazwy plikow ze wspolrzednymi 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ operacja przebiegla pomyslnie \\
+\hline
+{\em false} & -\/ nie udalo sie okreslic wspolrzednych globalnych -\/ blad prawidlowego odczytania wspolrzednych z pliku {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne} lub blad zapisu do pliku {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classGraniastoslupSCN_a22fa17548fa2785b1c9850bb166fa1e7}\label{classGraniastoslupSCN_a22fa17548fa2785b1c9850bb166fa1e7}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Podaj\+Kat\+Orientacji@{Podaj\+Kat\+Orientacji}}
+\index{Podaj\+Kat\+Orientacji@{Podaj\+Kat\+Orientacji}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Podaj\+Kat\+Orientacji()}{PodajKatOrientacji()}}
+{\footnotesize\ttfamily int const Graniastoslup\+S\+C\+N\+::\+Podaj\+Kat\+Orientacji (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie wartosci kata orientacji bryly. 
+
+Metoda umozliwia pobranie wartosci okreslonego kata orientacji bryly 
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wartosc} & {\itshape \+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classGraniastoslupSCN_ad3d658eb048fd25af6a31a6416e02908}\label{classGraniastoslupSCN_ad3d658eb048fd25af6a31a6416e02908}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Podaj\+Nazwe\+Pliku\+Glob@{Podaj\+Nazwe\+Pliku\+Glob}}
+\index{Podaj\+Nazwe\+Pliku\+Glob@{Podaj\+Nazwe\+Pliku\+Glob}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Podaj\+Nazwe\+Pliku\+Glob()}{PodajNazwePlikuGlob()}}
+{\footnotesize\ttfamily const std\+::string Graniastoslup\+S\+C\+N\+::\+Podaj\+Nazwe\+Pliku\+Glob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie nazwy przypisanego pliku ze wspolrzednymi globalnymi. 
+
+Metoda umozliwia pobranie nazwy przypisanego pliku, w ktorym beda znajdowac sie wyliczone wspolrzedne globalne obiektu \begin{DoxyPrecond}{Warunek wstępny}
+Nazwa pliku ze wspolrzednymi globalnymi musi byc wczesniej okreslona 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Parametr} & {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classGraniastoslupSCN_a48c31869ef862c487bb511d8a121005b}\label{classGraniastoslupSCN_a48c31869ef862c487bb511d8a121005b}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Podaj\+Polozenie@{Podaj\+Polozenie}}
+\index{Podaj\+Polozenie@{Podaj\+Polozenie}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Podaj\+Polozenie()}{PodajPolozenie()}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} const Graniastoslup\+S\+C\+N\+::\+Podaj\+Polozenie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie wartosci wektora polozenia bryly. 
+
+Metoda umozliwia pobranie wartosci okreslonego wektora polozenia bryly 
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wektor3D} & {\itshape \+\_\+\+Wek\+\_\+\+Translacji} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classGraniastoslupSCN_a6c761ec9040c78b88e8f927bbe1fefb2}\label{classGraniastoslupSCN_a6c761ec9040c78b88e8f927bbe1fefb2}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Wybierz\+Plik\+Glob@{Wybierz\+Plik\+Glob}}
+\index{Wybierz\+Plik\+Glob@{Wybierz\+Plik\+Glob}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Wybierz\+Plik\+Glob()}{WybierzPlikGlob()}}
+{\footnotesize\ttfamily void Graniastoslup\+S\+C\+N\+::\+Wybierz\+Plik\+Glob (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi globalnymi. 
+
+Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi globalnymi
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em Nazwa\+Pliku} & -\/ Nazwa pliku ze wspolrzednymi globalnymi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraniastoslupSCN_a279b52ec2cb4c39f1025089695388a2a}\label{classGraniastoslupSCN_a279b52ec2cb4c39f1025089695388a2a}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Wybierz\+Pliki@{Wybierz\+Pliki}}
+\index{Wybierz\+Pliki@{Wybierz\+Pliki}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Wybierz\+Pliki()}{WybierzPliki()}}
+{\footnotesize\ttfamily bool Graniastoslup\+S\+C\+N\+::\+Wybierz\+Pliki (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku\+We,  }\item[{const char $\ast$}]{Nazwa\+Pliku\+Wy,  }\item[{unsigned int}]{numer }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia przypisanie obiektowi dwoch plikow. 
+
+Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi poczatkowymi (lokalnymi) oraz pliku w ktorym zostana zapisane wspolrzedne przeksztalcone do ukladu globalnego (globalne). Wykorzystuje w tym celu metody \hyperlink{classObiektSceny_a84c19442a6a0757a1702e72effbb66d9}{Obiekt\+Sceny\+::\+Wybierz\+Plik\+Lok} \hyperlink{classGraniastoslupSCN_a6c761ec9040c78b88e8f927bbe1fefb2}{Graniastoslup\+S\+C\+N\+::\+Wybierz\+Plik\+Glob} \hyperlink{classGraniastoslupSCN_a4bf899d8eba989560c5955748c2c5204}{Graniastoslup\+S\+C\+N\+::\+Oblicz\+Globalne}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em Nazwa\+Pliku\+We} & -\/ Nazwa pliku ze wspolrzednymi lokalnymi \\
+\hline
+\mbox{\tt in}  & {\em Nazwa\+Pliku\+Wy} & -\/ Nazwa pliku ze wspolrzednymi lokalnymi \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ operacja przebiegla pomyslnie \\
+\hline
+{\em false} & -\/ metoda \hyperlink{classGraniastoslupSCN_a4bf899d8eba989560c5955748c2c5204}{Graniastoslup\+S\+C\+N\+::\+Oblicz\+Globalne} nie byla w stanie poprawnie wykonac operacji okreslenia i zapisania wspolrzednych globalnych \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classGraniastoslupSCN_a096492db05264adae9306f5fb50cc3c9}\label{classGraniastoslupSCN_a096492db05264adae9306f5fb50cc3c9}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Wyznacz\+Wsp@{Wyznacz\+Wsp}}
+\index{Wyznacz\+Wsp@{Wyznacz\+Wsp}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Wyznacz\+Wsp()}{WyznaczWsp()}}
+{\footnotesize\ttfamily bool Graniastoslup\+S\+C\+N\+::\+Wyznacz\+Wsp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda umozliwia wyznaczenie obecnych wspolrzednych skrajnych bryly. 
+
+Metoda umozliwia wyznaczenie obecnych wspolrzednych skrajnych bryly, nadpisujac w odpowiedni sposob metode \hyperlink{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}{Obiekt\+Sceny\+::\+Wyznacz\+Wsp()}
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekt musi miec poprawnie zadane nazwy plikow ze wspolrzednymi 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ proces przebiegł pomyślnie \\
+\hline
+{\em false} & -\/ nie udało sie wyznaczyc wspolrzednych skrajnych \\
+\hline
+\end{DoxyRetVals}
+
+
+Reimplementowana z \hyperlink{classGraniastoslup_a786313962b174b9c25084e45e827f39b}{Graniastoslup}.
+
+\mbox{\Hypertarget{classGraniastoslupSCN_a848f8d3f0298dda442fab7acec295f80}\label{classGraniastoslupSCN_a848f8d3f0298dda442fab7acec295f80}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Zmien\+\_\+kat\+\_\+wlasny@{Zmien\+\_\+kat\+\_\+wlasny}}
+\index{Zmien\+\_\+kat\+\_\+wlasny@{Zmien\+\_\+kat\+\_\+wlasny}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Zmien\+\_\+kat\+\_\+wlasny()}{Zmien\_kat\_wlasny()}}
+{\footnotesize\ttfamily void Graniastoslup\+S\+C\+N\+::\+Zmien\+\_\+kat\+\_\+wlasny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Zmiana kata wlasnego, tj. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em \+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX} & \\
+\hline
+\end{DoxyParams}
+Metoda umozliwia obrot graniastoslupa wokol osi OX \mbox{\Hypertarget{classGraniastoslupSCN_af074e119fe4e8a34d4be489d4d5512fe}\label{classGraniastoslupSCN_af074e119fe4e8a34d4be489d4d5512fe}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Zmien\+\_\+o\+\_\+kat@{Zmien\+\_\+o\+\_\+kat}}
+\index{Zmien\+\_\+o\+\_\+kat@{Zmien\+\_\+o\+\_\+kat}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Zmien\+\_\+o\+\_\+kat()}{Zmien\_o\_kat()}}
+{\footnotesize\ttfamily void Graniastoslup\+S\+C\+N\+::\+Zmien\+\_\+o\+\_\+kat (\begin{DoxyParamCaption}\item[{int}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia zmiane orientacji bryly wokol osi OZ. 
+
+Metoda umozliwia zmiane kata orientacji bryly zapisanego w polu {\itshape \+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ} zwiekszajac ja o wartosc zadana w parametrze {\itshape kat}. Jezeli wartosc kata orientacji wyniesie 360 lub -\/360, zostaje ona wyzerowana w celu zmniejszenia bledow dokladnosci obliczen
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em kat} & -\/ Kat o jaki zmieniona zostanie orientacja bryly \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraniastoslupSCN_a66b1dda997b41aaa596ad6b953f06c8c}\label{classGraniastoslupSCN_a66b1dda997b41aaa596ad6b953f06c8c}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Zmien\+\_\+o\+\_\+kat\+\_\+wlasny@{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny}}
+\index{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny@{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny()}{Zmien\_o\_kat\_wlasny()}}
+{\footnotesize\ttfamily void Graniastoslup\+S\+C\+N\+::\+Zmien\+\_\+o\+\_\+kat\+\_\+wlasny (\begin{DoxyParamCaption}\item[{int}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia zmiane orientacji bryly wokol osi OX. 
+
+Metoda umozliwia zmiane kata orientacji bryly zapisanego w polu {\itshape \+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX} zwiekszajac ja o wartosc zadana w parametrze {\itshape kat}. Jezeli wartosc kata orientacji wyniesie 360 lub -\/360, zostaje ona wyzerowana w celu zmniejszenia bledow dokladnosci obliczen
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em kat} & -\/ Kat o jaki zmieniona zostanie orientacja bryly \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraniastoslupSCN_a65db4e5bc006a5969f5a2ebb8b2adaea}\label{classGraniastoslupSCN_a65db4e5bc006a5969f5a2ebb8b2adaea}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!Zmien\+\_\+o\+\_\+translacje@{Zmien\+\_\+o\+\_\+translacje}}
+\index{Zmien\+\_\+o\+\_\+translacje@{Zmien\+\_\+o\+\_\+translacje}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{Zmien\+\_\+o\+\_\+translacje()}{Zmien\_o\_translacje()}}
+{\footnotesize\ttfamily void Graniastoslup\+S\+C\+N\+::\+Zmien\+\_\+o\+\_\+translacje (\begin{DoxyParamCaption}\item[{\hyperlink{classSWektor}{Wektor3D}}]{Translacja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia zmiane polozenia bryly. 
+
+Metoda umozliwia zmiane wektora polozenia bryly zapisanego w polu {\itshape \+\_\+\+Wek\+\_\+\+Translacji} zwiekszajac ja o wektor zadany w parametrze {\itshape Translacja} 
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em Translacja} & -\/ Wektor o jaki zwiekszony zostanie wektor translacji bryly \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{classGraniastoslupSCN_a6c82bb652a2a7ebefc166864af4be36a}\label{classGraniastoslupSCN_a6c82bb652a2a7ebefc166864af4be36a}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX@{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX}}
+\index{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX@{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX}{\_Kat\_Orientacji\_OX}}
+{\footnotesize\ttfamily int Graniastoslup\+S\+C\+N\+::\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje miare kata orientacji\+OX. 
+
+Pole przechowuje miare kata orientacji\+OX bryly okreslonego w stopniach \mbox{\Hypertarget{classGraniastoslupSCN_a9fd5ceb4bf6119ef152db01d43d4925c}\label{classGraniastoslupSCN_a9fd5ceb4bf6119ef152db01d43d4925c}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ@{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ}}
+\index{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ@{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ}{\_Kat\_Orientacji\_OZ}}
+{\footnotesize\ttfamily int Graniastoslup\+S\+C\+N\+::\+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje miare kata orientacji\+OZ. 
+
+Pole przechowuje miare kata orientacji\+OZ bryly okreslonego w stopniach \mbox{\Hypertarget{classGraniastoslupSCN_abd53a52e6fa9127c98d3922b4134fe67}\label{classGraniastoslupSCN_abd53a52e6fa9127c98d3922b4134fe67}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne@{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne}}
+\index{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne@{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne}{\_Plik\_Wsp\_Globalne}}
+{\footnotesize\ttfamily std\+::string Graniastoslup\+S\+C\+N\+::\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje nazwe pliku z danymi globalnymi. 
+
+Pole przechowuje nazwe pliku z danymi globalnymi \mbox{\Hypertarget{classGraniastoslupSCN_a8d6e1399862324d18f3dee74c41212d0}\label{classGraniastoslupSCN_a8d6e1399862324d18f3dee74c41212d0}} 
+\index{Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}!\+\_\+\+Wek\+\_\+\+Translacji@{\+\_\+\+Wek\+\_\+\+Translacji}}
+\index{\+\_\+\+Wek\+\_\+\+Translacji@{\+\_\+\+Wek\+\_\+\+Translacji}!Graniastoslup\+S\+CN@{Graniastoslup\+S\+CN}}
+\subsubsection{\texorpdfstring{\+\_\+\+Wek\+\_\+\+Translacji}{\_Wek\_Translacji}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} Graniastoslup\+S\+C\+N\+::\+\_\+\+Wek\+\_\+\+Translacji\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje wektor translacji bryly. 
+
+Pole przechowuje wektor translacji bryly -\/ domyslnie wektor zerowy 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{GraniastoslupSCN_8hh}{Graniastoslup\+S\+C\+N.\+hh}\item 
+src/\hyperlink{GraniastoslupSCN_8cpp}{Graniastoslup\+S\+C\+N.\+cpp}\end{DoxyCompactItemize}

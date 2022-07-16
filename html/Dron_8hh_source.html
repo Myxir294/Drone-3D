@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Podwodny II: Plik źródłowy inc/Dron.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Podwodny II
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Dron.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Dron_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DRON_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DRON_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ProstopadloscianSCN_8hh.html">ProstopadloscianSCN.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="GraniastoslupSCN_8hh.html">GraniastoslupSCN.hh</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classDron.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDron.html">Dron</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{   </div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classDron.html#af62e07b9d016168d5a129515f65f1609">   38</a></span>&#160;    <a class="code" href="classProstopadloscianSCN.html">ProstopadloscianSCN</a> <a class="code" href="classDron.html#af62e07b9d016168d5a129515f65f1609">_Rdzen</a>;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classDron.html#a16ece01f1022ab49f1017f010db254b1">   44</a></span>&#160;    <a class="code" href="classGraniastoslupSCN.html">GraniastoslupSCN</a> <a class="code" href="classDron.html#a16ece01f1022ab49f1017f010db254b1">_LewaSruba</a>;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classDron.html#abcf5121c081a80ec44fbfe1de9784f1d">   50</a></span>&#160;    <a class="code" href="classGraniastoslupSCN.html">GraniastoslupSCN</a> <a class="code" href="classDron.html#abcf5121c081a80ec44fbfe1de9784f1d">_PrawaSruba</a>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDron.html#a0d88b00af782f5e914887b2b089e1b9c">SprawdzMozliwoscRuchuSruby</a>(<a class="code" href="classObiektSceny.html">ObiektSceny</a> &amp;obiekt, <a class="code" href="classGraniastoslupSCN.html">GraniastoslupSCN</a> &amp;sruba);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDron.html#a4cff7a2c46fe43e32df58c8245d9d0d3">SprawdzMozliwoscRuchuRdzenia</a>(<a class="code" href="classObiektSceny.html">ObiektSceny</a> &amp;obiekt);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classDron.html#addd3f76aedda33de1c13d7a0cd5bea69">   84</a></span>&#160;    <a class="code" href="classProstopadloscianSCN.html">ProstopadloscianSCN</a>&amp; <a class="code" href="classDron.html#addd3f76aedda33de1c13d7a0cd5bea69">Wez_Rdzen</a>() {<span class="keywordflow">return</span> <a class="code" href="classDron.html#af62e07b9d016168d5a129515f65f1609">_Rdzen</a>;}</div><div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classDron.html#a18b1d0162c88a8e93322d6eb5d7b64f0">   91</a></span>&#160;    <a class="code" href="classGraniastoslupSCN.html">GraniastoslupSCN</a>&amp; <a class="code" href="classDron.html#a18b1d0162c88a8e93322d6eb5d7b64f0">Wez_Lewa_Srube</a>() {<span class="keywordflow">return</span> <a class="code" href="classDron.html#a16ece01f1022ab49f1017f010db254b1">_LewaSruba</a>;}</div><div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classDron.html#a1bdfbac069ae0f0ef1b168f0f2d9bc6e">   98</a></span>&#160;    <a class="code" href="classGraniastoslupSCN.html">GraniastoslupSCN</a>&amp; <a class="code" href="classDron.html#a1bdfbac069ae0f0ef1b168f0f2d9bc6e">Wez_Prawa_Srube</a>() {<span class="keywordflow">return</span> <a class="code" href="classDron.html#abcf5121c081a80ec44fbfe1de9784f1d">_PrawaSruba</a>;}</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDron.html#a5ddaabc5c441d8f2f204cc398e1b0db2">SprawdzMozliwoscRuchu</a>(<a class="code" href="classObiektSceny.html">ObiektSceny</a> &amp;obiekt);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDron.html#a75782b1ce9cd9f911e45f87f75ae95d6">Zmien_o_kat</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> kat);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDron.html#a6fcd15ec24881f0e92e84fc04ddd9a9a">Zmien_o_kat_wlasny</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> kat);</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDron.html#a5f5867d7f7adb7e540ef762a782a4103">Zmien_o_translacje</a>(<a class="code" href="classSWektor.html">Wektor3D</a> Translacja);</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDron.html#ac0c17bd50d8f7c11457ab69cb2237abb">ObliczGlobalne</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;};</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classDron_html_a4cff7a2c46fe43e32df58c8245d9d0d3"><div class="ttname"><a href="classDron.html#a4cff7a2c46fe43e32df58c8245d9d0d3">Dron::SprawdzMozliwoscRuchuRdzenia</a></div><div class="ttdeci">bool SprawdzMozliwoscRuchuRdzenia(ObiektSceny &amp;obiekt)</div><div class="ttdoc">Metoda umozliwia sprawdzenie mozliwosci wystapienia kolizji rdzenia z przeszkoda. ...</div><div class="ttdef"><b>Definition:</b> Dron.cpp:66</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html"><div class="ttname"><a href="classGraniastoslupSCN.html">GraniastoslupSCN</a></div><div class="ttdoc">GraniastoslupSCN jako Graniastoslup w ukladzie globalnym. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:23</div></div>
+<div class="ttc" id="classDron_html_a0d88b00af782f5e914887b2b089e1b9c"><div class="ttname"><a href="classDron.html#a0d88b00af782f5e914887b2b089e1b9c">Dron::SprawdzMozliwoscRuchuSruby</a></div><div class="ttdeci">bool SprawdzMozliwoscRuchuSruby(ObiektSceny &amp;obiekt, GraniastoslupSCN &amp;sruba)</div><div class="ttdoc">Metoda umozliwia sprawdzenie mozliwosci wystapienia kolizji sruby z przeszkoda. </div><div class="ttdef"><b>Definition:</b> Dron.cpp:10</div></div>
+<div class="ttc" id="classDron_html_abcf5121c081a80ec44fbfe1de9784f1d"><div class="ttname"><a href="classDron.html#abcf5121c081a80ec44fbfe1de9784f1d">Dron::_PrawaSruba</a></div><div class="ttdeci">GraniastoslupSCN _PrawaSruba</div><div class="ttdoc">Pole przechowuje prawa srube drona. </div><div class="ttdef"><b>Definition:</b> Dron.hh:50</div></div>
+<div class="ttc" id="classDron_html_a18b1d0162c88a8e93322d6eb5d7b64f0"><div class="ttname"><a href="classDron.html#a18b1d0162c88a8e93322d6eb5d7b64f0">Dron::Wez_Lewa_Srube</a></div><div class="ttdeci">GraniastoslupSCN &amp; Wez_Lewa_Srube()</div><div class="ttdoc">Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego _LewaSruba. </div><div class="ttdef"><b>Definition:</b> Dron.hh:91</div></div>
+<div class="ttc" id="classDron_html_a5ddaabc5c441d8f2f204cc398e1b0db2"><div class="ttname"><a href="classDron.html#a5ddaabc5c441d8f2f204cc398e1b0db2">Dron::SprawdzMozliwoscRuchu</a></div><div class="ttdeci">bool SprawdzMozliwoscRuchu(ObiektSceny &amp;obiekt)</div><div class="ttdoc">Metoda umozliwia sprawdzenie mozliwosci wystapienia kolizji drona z przeszkoda. </div><div class="ttdef"><b>Definition:</b> Dron.cpp:124</div></div>
+<div class="ttc" id="classObiektSceny_html"><div class="ttname"><a href="classObiektSceny.html">ObiektSceny</a></div><div class="ttdoc">Definicja klasy ObiektSceny. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:31</div></div>
+<div class="ttc" id="classDron_html_a6fcd15ec24881f0e92e84fc04ddd9a9a"><div class="ttname"><a href="classDron.html#a6fcd15ec24881f0e92e84fc04ddd9a9a">Dron::Zmien_o_kat_wlasny</a></div><div class="ttdeci">void Zmien_o_kat_wlasny(unsigned int kat)</div><div class="ttdoc">Metoda umozliwia zmiane orientacji srub wokol osi OX. </div><div class="ttdef"><b>Definition:</b> Dron.cpp:143</div></div>
+<div class="ttc" id="classDron_html_a16ece01f1022ab49f1017f010db254b1"><div class="ttname"><a href="classDron.html#a16ece01f1022ab49f1017f010db254b1">Dron::_LewaSruba</a></div><div class="ttdeci">GraniastoslupSCN _LewaSruba</div><div class="ttdoc">Pole przechowuje lewa srube drona. </div><div class="ttdef"><b>Definition:</b> Dron.hh:44</div></div>
+<div class="ttc" id="classDron_html"><div class="ttname"><a href="classDron.html">Dron</a></div><div class="ttdoc">Definicja klasy Dron. </div><div class="ttdef"><b>Definition:</b> Dron.hh:31</div></div>
+<div class="ttc" id="classDron_html_a75782b1ce9cd9f911e45f87f75ae95d6"><div class="ttname"><a href="classDron.html#a75782b1ce9cd9f911e45f87f75ae95d6">Dron::Zmien_o_kat</a></div><div class="ttdeci">void Zmien_o_kat(unsigned int kat)</div><div class="ttdoc">Metoda umozliwia zmiane orientacji drona wokol osi OZ. </div><div class="ttdef"><b>Definition:</b> Dron.cpp:136</div></div>
+<div class="ttc" id="classDron_html_a1bdfbac069ae0f0ef1b168f0f2d9bc6e"><div class="ttname"><a href="classDron.html#a1bdfbac069ae0f0ef1b168f0f2d9bc6e">Dron::Wez_Prawa_Srube</a></div><div class="ttdeci">GraniastoslupSCN &amp; Wez_Prawa_Srube()</div><div class="ttdoc">Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego _PrawaSruba. </div><div class="ttdef"><b>Definition:</b> Dron.hh:98</div></div>
+<div class="ttc" id="classDron_html_ac0c17bd50d8f7c11457ab69cb2237abb"><div class="ttname"><a href="classDron.html#ac0c17bd50d8f7c11457ab69cb2237abb">Dron::ObliczGlobalne</a></div><div class="ttdeci">bool ObliczGlobalne() const</div><div class="ttdoc">Realizuje przeksztalcenie wspolrzednych lokalnych drona do ukladu globalnego. </div><div class="ttdef"><b>Definition:</b> Dron.cpp:157</div></div>
+<div class="ttc" id="classDron_html_af62e07b9d016168d5a129515f65f1609"><div class="ttname"><a href="classDron.html#af62e07b9d016168d5a129515f65f1609">Dron::_Rdzen</a></div><div class="ttdeci">ProstopadloscianSCN _Rdzen</div><div class="ttdoc">Pole przechowuje rdzen drona. </div><div class="ttdef"><b>Definition:</b> Dron.hh:38</div></div>
+<div class="ttc" id="classSWektor_html"><div class="ttname"><a href="classSWektor.html">SWektor&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="classDron_html_addd3f76aedda33de1c13d7a0cd5bea69"><div class="ttname"><a href="classDron.html#addd3f76aedda33de1c13d7a0cd5bea69">Dron::Wez_Rdzen</a></div><div class="ttdeci">ProstopadloscianSCN &amp; Wez_Rdzen()</div><div class="ttdoc">Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego _Rdzen. </div><div class="ttdef"><b>Definition:</b> Dron.hh:84</div></div>
+<div class="ttc" id="classDron_html_a5f5867d7f7adb7e540ef762a782a4103"><div class="ttname"><a href="classDron.html#a5f5867d7f7adb7e540ef762a782a4103">Dron::Zmien_o_translacje</a></div><div class="ttdeci">void Zmien_o_translacje(Wektor3D Translacja)</div><div class="ttdoc">Metoda umozliwia zmiane polozenia drona. </div><div class="ttdef"><b>Definition:</b> Dron.cpp:149</div></div>
+<div class="ttc" id="GraniastoslupSCN_8hh_html"><div class="ttname"><a href="GraniastoslupSCN_8hh.html">GraniastoslupSCN.hh</a></div><div class="ttdoc">Zawiera definicję klasy GraniastoslupSCN. </div></div>
+<div class="ttc" id="classProstopadloscianSCN_html"><div class="ttname"><a href="classProstopadloscianSCN.html">ProstopadloscianSCN</a></div><div class="ttdoc">ProstopadloscianSCN jako Prostopadloscian w ukladzie globalnym. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:21</div></div>
+<div class="ttc" id="ProstopadloscianSCN_8hh_html"><div class="ttname"><a href="ProstopadloscianSCN_8hh.html">ProstopadloscianSCN.hh</a></div><div class="ttdoc">Zawiera definicję klasy ProstopadloscianSCN. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

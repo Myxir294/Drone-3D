@@ -1,0 +1,15 @@
+<map id="inc/Scena.hh" name="inc/Scena.hh">
+<area shape="rect" id="node2" href="$Dron_8hh.html" title="Zawiera definicję klasy Dron. " alt="" coords="240,80,308,107"/>
+<area shape="rect" id="node15" href="$lacze__do__gnuplota_8hh.html" title="Zawiera definicję klasy PzG::LaczeDoGNUPlota. " alt="" coords="388,80,536,107"/>
+<area shape="rect" id="node18" href="$Powierzchnia_8hh.html" title="Zawiera definicję klasy Powierzchnia. " alt="" coords="424,229,543,256"/>
+<area shape="rect" id="node19" href="$PowierzchniaFalowana_8hh.html" title="Zawiera definicję klasy PowierzchniaFalowana. " alt="" coords="567,229,741,256"/>
+<area shape="rect" id="node20" href="$Pret_8hh.html" title="Zawiera definicję klasy Pret. " alt="" coords="766,229,830,256"/>
+<area shape="rect" id="node3" href="$ProstopadloscianSCN_8hh.html" title="Zawiera definicję klasy ProstopadloscianSCN. " alt="" coords="5,155,175,181"/>
+<area shape="rect" id="node13" href="$GraniastoslupSCN_8hh.html" title="Zawiera definicję klasy GraniastoslupSCN. " alt="" coords="199,155,349,181"/>
+<area shape="rect" id="node4" href="$Prostopadloscian_8hh.html" title="Zawiera definicję klasy Prostopadloscian. " alt="" coords="41,229,181,256"/>
+<area shape="rect" id="node5" href="$ObiektSceny_8hh.html" title="Zawiera definicję klasy ObiektSceny. " alt="" coords="426,304,541,331"/>
+<area shape="rect" id="node6" href="$typy__danych_8hh.html" title="Zawiera definicję Wektora3D oraz Macierzy3x3. " alt="" coords="591,379,706,405"/>
+<area shape="rect" id="node7" href="$SMacierz_8hh.html" title="Plik zawiera definicje szablonu macierzy kwadratowej. " alt="" coords="577,453,672,480"/>
+<area shape="rect" id="node9" href="$SWektor_8hh.html" title="Plik zawiera szablon klasy modelujacej pojecie wektora. " alt="" coords="579,528,670,555"/>
+<area shape="rect" id="node14" href="$Graniastoslup_8hh.html" title="Zawiera definicję klasy Graniastoslup. " alt="" coords="221,229,341,256"/>
+</map>

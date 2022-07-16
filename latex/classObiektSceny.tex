@@ -1,0 +1,261 @@
+\hypertarget{classObiektSceny}{}\section{Dokumentacja klasy Obiekt\+Sceny}
+\label{classObiektSceny}\index{Obiekt\+Sceny@{Obiekt\+Sceny}}
+
+
+Definicja klasy \hyperlink{classObiektSceny}{Obiekt\+Sceny}.  
+
+
+
+
+{\ttfamily \#include $<$Obiekt\+Sceny.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Obiekt\+Sceny\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObiektSceny__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Obiekt\+Sceny\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classObiektSceny__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObiektSceny_a3ac6cda78772edd23c39b3827c1695d8}{Obiekt\+Sceny} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. \end{DoxyCompactList}\item 
+virtual \hyperlink{classObiektSceny_ab34aec7f37d73f5b1cc4d3268ac39af9}{$\sim$\+Obiekt\+Sceny} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}{Wyznacz\+Wsp} ()=0
+\begin{DoxyCompactList}\small\item\em Pierwotna wersja metodu umozliwiajacej wyznaczenie wspolrzednych skrajnych bryly. \end{DoxyCompactList}\item 
+void \hyperlink{classObiektSceny_a84c19442a6a0757a1702e72effbb66d9}{Wybierz\+Plik\+Lok} (const char $\ast$Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia przypisanie obiektowi pliku. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{classObiektSceny_abe634a96ea225f2e21b3dead5207d122}{Podaj\+Nazwe\+Pliku\+Lok} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie nazwy przypisanego pliku. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} const \hyperlink{classObiektSceny_ae6e0207ad7d44742b2973e92382619bb}{Podaj\+Wsp\+Max} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie wartosci wspolrzednych maksymalnych. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} \& \hyperlink{classObiektSceny_a5a66f5506b5e30e47040d31c8b751c7a}{Podaj\+Wsp\+Max} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie i modyfikacje wartosci wspolrzednych maksymalnych. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} const \hyperlink{classObiektSceny_a81f3173a7b40fdf30fd0488e470b86a6}{Podaj\+Wsp\+Min} () const
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie wartosci wspolrzednych minimalnych. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} \& \hyperlink{classObiektSceny_a2f660e413ae6ed3eb0df7fac9881cf8a}{Podaj\+Wsp\+Min} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia pobranie i modyfikacje wartosci wspolrzednych minimalnych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classObiektSceny_abd56bb7b6b0db7ecef8055ce16131358}{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje nazwe pliku z danymi lokalnymi. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} \hyperlink{classObiektSceny_a09bfe62996fd73bbc7876524b211ce20}{\+\_\+\+Wsp\+\_\+\+Max}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje wspolrzedne maksymalne. \end{DoxyCompactList}\item 
+\hyperlink{classSWektor}{Wektor3D} \hyperlink{classObiektSceny_a7395dc947479c40e29636cd8e8c5bfd3}{\+\_\+\+Wsp\+\_\+\+Min}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje wspolrzedne minimalne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \hyperlink{classObiektSceny}{Obiekt\+Sceny}. 
+
+Definicję klasy \hyperlink{classObiektSceny}{Obiekt\+Sceny}, sluzacej do ogólnej interpretacji obiektów przestrzennych, mających okreslone wspolrzedne w ukladzie kartezjanskim. Ponadto obiekt zapamietuje wartosci swoich wspolrzednych skrajnych w celu umozliwienia bycia wykorzystanym do wykrycia kolizji. Klasa stanowi klase bazowa dla kazdej bryly reprezentowanej w pozostalej czesci programu. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classObiektSceny_a3ac6cda78772edd23c39b3827c1695d8}\label{classObiektSceny_a3ac6cda78772edd23c39b3827c1695d8}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{Obiekt\+Sceny()}{ObiektSceny()}}
+{\footnotesize\ttfamily Obiekt\+Sceny\+::\+Obiekt\+Sceny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor bezparametryczny. 
+
+Konstruktor bezparametryczny wyswietlajacy komunikat o utworzeniu obiektu, w celu ulatwienia kontrolowania poprawnego wykorzystania pamieci \mbox{\Hypertarget{classObiektSceny_ab34aec7f37d73f5b1cc4d3268ac39af9}\label{classObiektSceny_ab34aec7f37d73f5b1cc4d3268ac39af9}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!````~Obiekt\+Sceny@{$\sim$\+Obiekt\+Sceny}}
+\index{````~Obiekt\+Sceny@{$\sim$\+Obiekt\+Sceny}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{$\sim$\+Obiekt\+Sceny()}{~ObiektSceny()}}
+{\footnotesize\ttfamily virtual Obiekt\+Sceny\+::$\sim$\+Obiekt\+Sceny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destruktor. 
+
+Destruktor wyswietlajacy komunikat o usunieciu obiektu, w celu ulatwienia kontrolowania poprawnego wykorzystania pamieci 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classObiektSceny_abe634a96ea225f2e21b3dead5207d122}\label{classObiektSceny_abe634a96ea225f2e21b3dead5207d122}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!Podaj\+Nazwe\+Pliku\+Lok@{Podaj\+Nazwe\+Pliku\+Lok}}
+\index{Podaj\+Nazwe\+Pliku\+Lok@{Podaj\+Nazwe\+Pliku\+Lok}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{Podaj\+Nazwe\+Pliku\+Lok()}{PodajNazwePlikuLok()}}
+{\footnotesize\ttfamily const std\+::string Obiekt\+Sceny\+::\+Podaj\+Nazwe\+Pliku\+Lok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie nazwy przypisanego pliku. 
+
+Metoda umozliwia pobranie nazwy przypisanego pliku, w ktorym znajduja sie zadane wspolrzedne obiektu \begin{DoxyPrecond}{Warunek wstępny}
+Nazwa pliku lokalnego musi byc wczesniej wybrana 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Parametr} & {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classObiektSceny_ae6e0207ad7d44742b2973e92382619bb}\label{classObiektSceny_ae6e0207ad7d44742b2973e92382619bb}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!Podaj\+Wsp\+Max@{Podaj\+Wsp\+Max}}
+\index{Podaj\+Wsp\+Max@{Podaj\+Wsp\+Max}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{Podaj\+Wsp\+Max()}{PodajWspMax()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} const Obiekt\+Sceny\+::\+Podaj\+Wsp\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie wartosci wspolrzednych maksymalnych. 
+
+Metoda umozliwia pobranie wartosci wspolrzednych maksymalnych \begin{DoxyPrecond}{Warunek wstępny}
+Wartosc wspolrzednych musi byc wczesniej wyliczona 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wektor3D} & {\itshape \+\_\+\+Wsp\+\_\+\+Max} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classObiektSceny_a5a66f5506b5e30e47040d31c8b751c7a}\label{classObiektSceny_a5a66f5506b5e30e47040d31c8b751c7a}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!Podaj\+Wsp\+Max@{Podaj\+Wsp\+Max}}
+\index{Podaj\+Wsp\+Max@{Podaj\+Wsp\+Max}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{Podaj\+Wsp\+Max()}{PodajWspMax()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D}\& Obiekt\+Sceny\+::\+Podaj\+Wsp\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie i modyfikacje wartosci wspolrzednych maksymalnych. 
+
+Metoda umozliwia pobranie i modyfikacje wartosci wspolrzednych maksymalnych \begin{DoxyPrecond}{Warunek wstępny}
+Wartosc wspolrzednych musi byc wczesniej wyliczona 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wektor3\+D\&} & {\itshape \+\_\+\+Wsp\+\_\+\+Max} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classObiektSceny_a81f3173a7b40fdf30fd0488e470b86a6}\label{classObiektSceny_a81f3173a7b40fdf30fd0488e470b86a6}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!Podaj\+Wsp\+Min@{Podaj\+Wsp\+Min}}
+\index{Podaj\+Wsp\+Min@{Podaj\+Wsp\+Min}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{Podaj\+Wsp\+Min()}{PodajWspMin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} const Obiekt\+Sceny\+::\+Podaj\+Wsp\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie wartosci wspolrzednych minimalnych. 
+
+Metoda umozliwia pobranie wartosci wspolrzednych minimalnych \begin{DoxyPrecond}{Warunek wstępny}
+Wartosc wspolrzednych musi byc wczesniej wyliczona 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wektor3D} & {\itshape \+\_\+\+Wsp\+\_\+\+Min} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classObiektSceny_a2f660e413ae6ed3eb0df7fac9881cf8a}\label{classObiektSceny_a2f660e413ae6ed3eb0df7fac9881cf8a}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!Podaj\+Wsp\+Min@{Podaj\+Wsp\+Min}}
+\index{Podaj\+Wsp\+Min@{Podaj\+Wsp\+Min}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{Podaj\+Wsp\+Min()}{PodajWspMin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D}\& Obiekt\+Sceny\+::\+Podaj\+Wsp\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia pobranie i modyfikacje wartosci wspolrzednych minimalnych. 
+
+Metoda umozliwia pobranie i modyfikacje wartosci wspolrzednych minimalnych \begin{DoxyPrecond}{Warunek wstępny}
+Wartosc wspolrzednych musi byc wczesniej wyliczona 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Wektor3\+D\&} & {\itshape \+\_\+\+Wsp\+\_\+\+Min} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classObiektSceny_a84c19442a6a0757a1702e72effbb66d9}\label{classObiektSceny_a84c19442a6a0757a1702e72effbb66d9}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!Wybierz\+Plik\+Lok@{Wybierz\+Plik\+Lok}}
+\index{Wybierz\+Plik\+Lok@{Wybierz\+Plik\+Lok}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{Wybierz\+Plik\+Lok()}{WybierzPlikLok()}}
+{\footnotesize\ttfamily void Obiekt\+Sceny\+::\+Wybierz\+Plik\+Lok (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia przypisanie obiektowi pliku. 
+
+Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi lokalnymi
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em Nazwa\+Pliku} & -\/ Nazwa pliku ze wspolrzednymi lokalnymi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}\label{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!Wyznacz\+Wsp@{Wyznacz\+Wsp}}
+\index{Wyznacz\+Wsp@{Wyznacz\+Wsp}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{Wyznacz\+Wsp()}{WyznaczWsp()}}
+{\footnotesize\ttfamily virtual bool Obiekt\+Sceny\+::\+Wyznacz\+Wsp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pierwotna wersja metodu umozliwiajacej wyznaczenie wspolrzednych skrajnych bryly. 
+
+Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly. W postaci zapisanej w tej klasie nie posiada ona kodu, gdyz nigdy nie bedzie ona wywolywana jako metoda samoistniejącej klasy bazowej -\/ w odpowiednich klasach pochodnych jest ona we wlasciwy sposob nadpisywana, aby poprawnie wyznaczac wspolrzedne skrajne dla roznych rodzajow bryl
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekt musi miec poprawnie zadane nazwy plikow ze wspolrzednymi 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ proces przebiegł pomyślnie \\
+\hline
+{\em false} & -\/ nie udało sie wyznaczyc wspolrzednych skrajnych \\
+\hline
+\end{DoxyRetVals}
+
+
+Implementowany w \hyperlink{classGraniastoslupSCN_a096492db05264adae9306f5fb50cc3c9}{Graniastoslup\+S\+CN}, \hyperlink{classGraniastoslup_a786313962b174b9c25084e45e827f39b}{Graniastoslup}, \hyperlink{classProstopadloscian_a9d182fd3d875a1e3928c8972727be6fe}{Prostopadloscian}, \hyperlink{classProstopadloscianSCN_acdd4a5c10fb6347ad65b1a516ee83b01}{Prostopadloscian\+S\+CN}, \hyperlink{classPowierzchnia_a8e2453f9f7e8f92d77bd5608ef3de005}{Powierzchnia}, \hyperlink{classPowierzchniaFalowana_ae9f43f9acfb3db49fc9931ca4917e049}{Powierzchnia\+Falowana} i \hyperlink{classPret_affe3fdc72a84022eb5bbfddbf24cc2fc}{Pret}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{classObiektSceny_abd56bb7b6b0db7ecef8055ce16131358}\label{classObiektSceny_abd56bb7b6b0db7ecef8055ce16131358}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne@{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne}}
+\index{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne@{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne}{\_Plik\_Wsp\_Lokalne}}
+{\footnotesize\ttfamily std\+::string Obiekt\+Sceny\+::\+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje nazwe pliku z danymi lokalnymi. 
+
+Pole przechowuje nazwe pliku z danymi lokalnymi \mbox{\Hypertarget{classObiektSceny_a09bfe62996fd73bbc7876524b211ce20}\label{classObiektSceny_a09bfe62996fd73bbc7876524b211ce20}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!\+\_\+\+Wsp\+\_\+\+Max@{\+\_\+\+Wsp\+\_\+\+Max}}
+\index{\+\_\+\+Wsp\+\_\+\+Max@{\+\_\+\+Wsp\+\_\+\+Max}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{\+\_\+\+Wsp\+\_\+\+Max}{\_Wsp\_Max}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} Obiekt\+Sceny\+::\+\_\+\+Wsp\+\_\+\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje wspolrzedne maksymalne. 
+
+Pole przechowuje wspolrzedne maksymalne, tj. najbardziej wysuniete w strone dodatniej czesci kazdej osi ukladu \mbox{\Hypertarget{classObiektSceny_a7395dc947479c40e29636cd8e8c5bfd3}\label{classObiektSceny_a7395dc947479c40e29636cd8e8c5bfd3}} 
+\index{Obiekt\+Sceny@{Obiekt\+Sceny}!\+\_\+\+Wsp\+\_\+\+Min@{\+\_\+\+Wsp\+\_\+\+Min}}
+\index{\+\_\+\+Wsp\+\_\+\+Min@{\+\_\+\+Wsp\+\_\+\+Min}!Obiekt\+Sceny@{Obiekt\+Sceny}}
+\subsubsection{\texorpdfstring{\+\_\+\+Wsp\+\_\+\+Min}{\_Wsp\_Min}}
+{\footnotesize\ttfamily \hyperlink{classSWektor}{Wektor3D} Obiekt\+Sceny\+::\+\_\+\+Wsp\+\_\+\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje wspolrzedne minimalne. 
+
+Pole przechowuje wspolrzedne minimalne, tj. najbardziej wysuniete w strone ujemnej czesci kazdej osi ukladu 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{ObiektSceny_8hh}{Obiekt\+Sceny.\+hh}\end{DoxyCompactItemize}

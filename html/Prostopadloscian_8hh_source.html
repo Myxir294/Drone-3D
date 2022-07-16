@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Podwodny II: Plik źródłowy inc/Prostopadloscian.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Podwodny II
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Prostopadloscian.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Prostopadloscian_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PROSTOPADLOSCIAN_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PROSTOPADLOSCIAN_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ObiektSceny_8hh.html">ObiektSceny.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classProstopadloscian.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classProstopadloscian.html">Prostopadloscian</a>: <span class="keyword">public</span> <a class="code" href="classObiektSceny.html">ObiektSceny</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classProstopadloscian.html#a06187a64d02fff11fc99e749abcef125">   32</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classProstopadloscian.html#a06187a64d02fff11fc99e749abcef125">_promien</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classProstopadloscian.html#a3aac0fbd53f5add1fe4e802204e7f609">   38</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <a class="code" href="classProstopadloscian.html#a3aac0fbd53f5add1fe4e802204e7f609">_srodek_lok</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classProstopadloscian.html#a432b8df2af37ba1a3596f500824eaffe">   46</a></span>&#160;    <a class="code" href="classProstopadloscian.html#a432b8df2af37ba1a3596f500824eaffe">Prostopadloscian</a>(){_promien = 0;}</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classProstopadloscian.html#a148c8e01a4610bd61081b49789d3bc71">Wyznacz_Promien_i_Srodek</a>();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classProstopadloscian.html#ae6b1528649b6034209ac763cc5881527">   68</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keyword">const</span> <a class="code" href="classProstopadloscian.html#ae6b1528649b6034209ac763cc5881527">PodajPromien</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classProstopadloscian.html#a06187a64d02fff11fc99e749abcef125">_promien</a>;}</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classProstopadloscian.html#ab9c86b023b990acffe00891c17ee596c">   76</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <span class="keyword">const</span> <a class="code" href="classProstopadloscian.html#ab9c86b023b990acffe00891c17ee596c">PodajSrodekLok</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classProstopadloscian.html#a3aac0fbd53f5add1fe4e802204e7f609">_srodek_lok</a>;}</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classProstopadloscian.html#a9d182fd3d875a1e3928c8972727be6fe">WyznaczWsp</a>() <span class="keyword">override</span>;    </div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classProstopadloscian_html_a432b8df2af37ba1a3596f500824eaffe"><div class="ttname"><a href="classProstopadloscian.html#a432b8df2af37ba1a3596f500824eaffe">Prostopadloscian::Prostopadloscian</a></div><div class="ttdeci">Prostopadloscian()</div><div class="ttdoc">Konstruktor bezparametryczny. </div><div class="ttdef"><b>Definition:</b> Prostopadloscian.hh:46</div></div>
+<div class="ttc" id="classProstopadloscian_html_a148c8e01a4610bd61081b49789d3bc71"><div class="ttname"><a href="classProstopadloscian.html#a148c8e01a4610bd61081b49789d3bc71">Prostopadloscian::Wyznacz_Promien_i_Srodek</a></div><div class="ttdeci">void Wyznacz_Promien_i_Srodek()</div><div class="ttdoc">Metoda umozliwia okreslenie promienia i srodka. </div><div class="ttdef"><b>Definition:</b> Prostopadloscian.cpp:11</div></div>
+<div class="ttc" id="classObiektSceny_html"><div class="ttname"><a href="classObiektSceny.html">ObiektSceny</a></div><div class="ttdoc">Definicja klasy ObiektSceny. </div><div class="ttdef"><b>Definition:</b> ObiektSceny.hh:31</div></div>
+<div class="ttc" id="classProstopadloscian_html_a06187a64d02fff11fc99e749abcef125"><div class="ttname"><a href="classProstopadloscian.html#a06187a64d02fff11fc99e749abcef125">Prostopadloscian::_promien</a></div><div class="ttdeci">unsigned int _promien</div><div class="ttdoc">Pole przechowuje dlugosc promienia. </div><div class="ttdef"><b>Definition:</b> Prostopadloscian.hh:32</div></div>
+<div class="ttc" id="classProstopadloscian_html_ae6b1528649b6034209ac763cc5881527"><div class="ttname"><a href="classProstopadloscian.html#ae6b1528649b6034209ac763cc5881527">Prostopadloscian::PodajPromien</a></div><div class="ttdeci">unsigned int const PodajPromien() const</div><div class="ttdoc">Metoda umozliwia pobranie dlugosci promienia. </div><div class="ttdef"><b>Definition:</b> Prostopadloscian.hh:68</div></div>
+<div class="ttc" id="classSWektor_html"><div class="ttname"><a href="classSWektor.html">SWektor&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="classProstopadloscian_html_ab9c86b023b990acffe00891c17ee596c"><div class="ttname"><a href="classProstopadloscian.html#ab9c86b023b990acffe00891c17ee596c">Prostopadloscian::PodajSrodekLok</a></div><div class="ttdeci">Wektor3D const PodajSrodekLok() const</div><div class="ttdoc">Metoda umozliwia pobranie wspolrzednych srodka. </div><div class="ttdef"><b>Definition:</b> Prostopadloscian.hh:76</div></div>
+<div class="ttc" id="classProstopadloscian_html_a3aac0fbd53f5add1fe4e802204e7f609"><div class="ttname"><a href="classProstopadloscian.html#a3aac0fbd53f5add1fe4e802204e7f609">Prostopadloscian::_srodek_lok</a></div><div class="ttdeci">Wektor3D _srodek_lok</div><div class="ttdoc">Pole przechowuje wspolrzedne srodka. </div><div class="ttdef"><b>Definition:</b> Prostopadloscian.hh:38</div></div>
+<div class="ttc" id="classProstopadloscian_html"><div class="ttname"><a href="classProstopadloscian.html">Prostopadloscian</a></div><div class="ttdoc">Prostopadloscian jako bryla przestrzenna o promieniu i srodku lokalnym. </div><div class="ttdef"><b>Definition:</b> Prostopadloscian.hh:25</div></div>
+<div class="ttc" id="ObiektSceny_8hh_html"><div class="ttname"><a href="ObiektSceny_8hh.html">ObiektSceny.hh</a></div><div class="ttdoc">Zawiera definicję klasy ObiektSceny. </div></div>
+<div class="ttc" id="classProstopadloscian_html_a9d182fd3d875a1e3928c8972727be6fe"><div class="ttname"><a href="classProstopadloscian.html#a9d182fd3d875a1e3928c8972727be6fe">Prostopadloscian::WyznaczWsp</a></div><div class="ttdeci">virtual bool WyznaczWsp() override</div><div class="ttdoc">Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly. </div><div class="ttdef"><b>Definition:</b> Prostopadloscian.cpp:51</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

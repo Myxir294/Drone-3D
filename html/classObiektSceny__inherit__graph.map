@@ -1,0 +1,9 @@
+<map id="ObiektSceny" name="ObiektSceny">
+<area shape="rect" id="node2" href="$classGraniastoslup.html" title="Graniastoslup jako bryla przestrzenna o promieniu i srodku lokalnym. " alt="" coords="19,80,122,107"/>
+<area shape="rect" id="node4" href="$classPowierzchnia.html" title="Powierzchnia jako obiekt graficzny. " alt="" coords="146,80,246,107"/>
+<area shape="rect" id="node5" href="$classPowierzchniaFalowana.html" title="PowierzchniaFalowana jako obiekt graficzny. " alt="" coords="270,80,426,107"/>
+<area shape="rect" id="node6" href="$classPret.html" title="Pret jako obiekt graficzny. " alt="" coords="450,80,497,107"/>
+<area shape="rect" id="node7" href="$classProstopadloscian.html" title="Prostopadloscian jako bryla przestrzenna o promieniu i srodku lokalnym. " alt="" coords="521,80,644,107"/>
+<area shape="rect" id="node3" href="$classGraniastoslupSCN.html" title="GraniastoslupSCN jako Graniastoslup w ukladzie globalnym. " alt="" coords="5,155,136,181"/>
+<area shape="rect" id="node8" href="$classProstopadloscianSCN.html" title="ProstopadloscianSCN jako Prostopadloscian w ukladzie globalnym. " alt="" coords="507,155,658,181"/>
+</map>

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Podwodny II: Plik źródłowy inc/ProstopadloscianSCN.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Podwodny II
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ProstopadloscianSCN.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ProstopadloscianSCN_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PROSTOPADLOSCIANSCN_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PROSTOPADLOSCIANSCN_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Prostopadloscian_8hh.html">Prostopadloscian.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classProstopadloscianSCN.html">ProstopadloscianSCN</a>: <span class="keyword">public</span> <a class="code" href="classProstopadloscian.html">Prostopadloscian</a></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html#ab6ed51a7c62d80bca489497ad60a861c">   28</a></span>&#160;    std::string <a class="code" href="classProstopadloscianSCN.html#ab6ed51a7c62d80bca489497ad60a861c">_Plik_Wsp_Globalne</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html#ab47d8efc8b2817cabf5ea70915a8f5dc">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classProstopadloscianSCN.html#ab47d8efc8b2817cabf5ea70915a8f5dc">_Kat_Orientacji</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html#a4ca4e6e7fe68e627d4a3f6373f1482ad">   43</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <a class="code" href="classProstopadloscianSCN.html#a4ca4e6e7fe68e627d4a3f6373f1482ad">_Wek_Translacji</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html#a8288627cc69c54812c06be68950615f5">   52</a></span>&#160;    <a class="code" href="classProstopadloscianSCN.html#a8288627cc69c54812c06be68950615f5">ProstopadloscianSCN</a>(){_Kat_Orientacji = 0;}</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html#aedacd1e8362390241287296f5107d493">   61</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classProstopadloscianSCN.html#aedacd1e8362390241287296f5107d493">WybierzPlikGlob</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *NazwaPliku){_Plik_Wsp_Globalne = NazwaPliku;}</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html#a203c4bf0a0e65ed9896199e7a6dc498b">   71</a></span>&#160;    <span class="keyword">const</span> std::string <a class="code" href="classProstopadloscianSCN.html#a203c4bf0a0e65ed9896199e7a6dc498b">PodajNazwePlikuGlob</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classProstopadloscianSCN.html#ab6ed51a7c62d80bca489497ad60a861c">_Plik_Wsp_Globalne</a>;}</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classProstopadloscianSCN.html#acdd4a5c10fb6347ad65b1a516ee83b01">WyznaczWsp</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classProstopadloscianSCN.html#ada3c51233b828c9ee8466a1c4270906b">ObliczGlobalne</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classProstopadloscianSCN.html#a397c310956e20068dc3588ee4d4a9c87">WybierzPliki</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *NazwaPlikuWe, <span class="keyword">const</span> <span class="keywordtype">char</span> *NazwaPlikuWy);</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classProstopadloscianSCN.html#a1f9b715a50dd0e84fb6391dcccc962e8">Zmien_o_kat</a>(<span class="keywordtype">int</span> kat);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html#afa54ddf8455489f51aa945afcafee27f">  139</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classProstopadloscianSCN.html#afa54ddf8455489f51aa945afcafee27f">Zmien_o_translacje</a>(<a class="code" href="classSWektor.html">Wektor3D</a> Translacja){_Wek_Translacji = _Wek_Translacji + Translacja;}</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html#a4d1aaf928130a4d48a0cdc9ab79917be">  148</a></span>&#160;    <span class="keywordtype">int</span> <span class="keyword">const</span> <a class="code" href="classProstopadloscianSCN.html#a4d1aaf928130a4d48a0cdc9ab79917be">PodajKatOrientacji</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classProstopadloscianSCN.html#ab47d8efc8b2817cabf5ea70915a8f5dc">_Kat_Orientacji</a>;}</div><div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classProstopadloscianSCN.html#ae0157d734326422f325c9af1894292ed">  155</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <span class="keyword">const</span> <a class="code" href="classProstopadloscianSCN.html#ae0157d734326422f325c9af1894292ed">PodajPolozenie</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classProstopadloscianSCN.html#a4ca4e6e7fe68e627d4a3f6373f1482ad">_Wek_Translacji</a>;}</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;};</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classProstopadloscianSCN_html_ada3c51233b828c9ee8466a1c4270906b"><div class="ttname"><a href="classProstopadloscianSCN.html#ada3c51233b828c9ee8466a1c4270906b">ProstopadloscianSCN::ObliczGlobalne</a></div><div class="ttdeci">bool ObliczGlobalne() const</div><div class="ttdoc">Realizuje przeksztalcenie wspolrzednych lokalnych do ukladu globalnego. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.cpp:13</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_a203c4bf0a0e65ed9896199e7a6dc498b"><div class="ttname"><a href="classProstopadloscianSCN.html#a203c4bf0a0e65ed9896199e7a6dc498b">ProstopadloscianSCN::PodajNazwePlikuGlob</a></div><div class="ttdeci">const std::string PodajNazwePlikuGlob() const</div><div class="ttdoc">Metoda umozliwia pobranie nazwy przypisanego pliku ze wspolrzednymi globalnymi. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:71</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_a8288627cc69c54812c06be68950615f5"><div class="ttname"><a href="classProstopadloscianSCN.html#a8288627cc69c54812c06be68950615f5">ProstopadloscianSCN::ProstopadloscianSCN</a></div><div class="ttdeci">ProstopadloscianSCN()</div><div class="ttdoc">Konstruktor obiektu ProstopadloscianSCN. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:52</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_a4ca4e6e7fe68e627d4a3f6373f1482ad"><div class="ttname"><a href="classProstopadloscianSCN.html#a4ca4e6e7fe68e627d4a3f6373f1482ad">ProstopadloscianSCN::_Wek_Translacji</a></div><div class="ttdeci">Wektor3D _Wek_Translacji</div><div class="ttdoc">Pole przechowuje wektor translacji bryly. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:43</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_acdd4a5c10fb6347ad65b1a516ee83b01"><div class="ttname"><a href="classProstopadloscianSCN.html#acdd4a5c10fb6347ad65b1a516ee83b01">ProstopadloscianSCN::WyznaczWsp</a></div><div class="ttdeci">virtual bool WyznaczWsp() override</div><div class="ttdoc">Metoda umozliwia wyznaczenie obecnych wspolrzednych skrajnych bryly. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.cpp:52</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_ab6ed51a7c62d80bca489497ad60a861c"><div class="ttname"><a href="classProstopadloscianSCN.html#ab6ed51a7c62d80bca489497ad60a861c">ProstopadloscianSCN::_Plik_Wsp_Globalne</a></div><div class="ttdeci">std::string _Plik_Wsp_Globalne</div><div class="ttdoc">Pole przechowuje nazwe pliku z danymi globalnymi. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:28</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_a397c310956e20068dc3588ee4d4a9c87"><div class="ttname"><a href="classProstopadloscianSCN.html#a397c310956e20068dc3588ee4d4a9c87">ProstopadloscianSCN::WybierzPliki</a></div><div class="ttdeci">bool WybierzPliki(const char *NazwaPlikuWe, const char *NazwaPlikuWy)</div><div class="ttdoc">Metoda umozliwia przypisanie obiektowi dwoch plikow. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.cpp:96</div></div>
+<div class="ttc" id="classSWektor_html"><div class="ttname"><a href="classSWektor.html">SWektor&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_ae0157d734326422f325c9af1894292ed"><div class="ttname"><a href="classProstopadloscianSCN.html#ae0157d734326422f325c9af1894292ed">ProstopadloscianSCN::PodajPolozenie</a></div><div class="ttdeci">Wektor3D const PodajPolozenie() const</div><div class="ttdoc">Metoda umozliwia pobranie wartosci wektora polozenia bryly. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:155</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_ab47d8efc8b2817cabf5ea70915a8f5dc"><div class="ttname"><a href="classProstopadloscianSCN.html#ab47d8efc8b2817cabf5ea70915a8f5dc">ProstopadloscianSCN::_Kat_Orientacji</a></div><div class="ttdeci">int _Kat_Orientacji</div><div class="ttdoc">Pole przechowuje miare kata orientacji. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:35</div></div>
+<div class="ttc" id="classProstopadloscian_html"><div class="ttname"><a href="classProstopadloscian.html">Prostopadloscian</a></div><div class="ttdoc">Prostopadloscian jako bryla przestrzenna o promieniu i srodku lokalnym. </div><div class="ttdef"><b>Definition:</b> Prostopadloscian.hh:25</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_aedacd1e8362390241287296f5107d493"><div class="ttname"><a href="classProstopadloscianSCN.html#aedacd1e8362390241287296f5107d493">ProstopadloscianSCN::WybierzPlikGlob</a></div><div class="ttdeci">void WybierzPlikGlob(const char *NazwaPliku)</div><div class="ttdoc">Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi globalnymi. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:61</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_a4d1aaf928130a4d48a0cdc9ab79917be"><div class="ttname"><a href="classProstopadloscianSCN.html#a4d1aaf928130a4d48a0cdc9ab79917be">ProstopadloscianSCN::PodajKatOrientacji</a></div><div class="ttdeci">int const PodajKatOrientacji() const</div><div class="ttdoc">Metoda umozliwia pobranie wartosci kata orientacji bryly. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:148</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_a1f9b715a50dd0e84fb6391dcccc962e8"><div class="ttname"><a href="classProstopadloscianSCN.html#a1f9b715a50dd0e84fb6391dcccc962e8">ProstopadloscianSCN::Zmien_o_kat</a></div><div class="ttdeci">void Zmien_o_kat(int kat)</div><div class="ttdoc">Metoda umozliwia zmiane orientacji bryly wokol osi OZ. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.cpp:103</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html_afa54ddf8455489f51aa945afcafee27f"><div class="ttname"><a href="classProstopadloscianSCN.html#afa54ddf8455489f51aa945afcafee27f">ProstopadloscianSCN::Zmien_o_translacje</a></div><div class="ttdeci">void Zmien_o_translacje(Wektor3D Translacja)</div><div class="ttdoc">Metoda umozliwia zmiane polozenia bryly. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:139</div></div>
+<div class="ttc" id="classProstopadloscianSCN_html"><div class="ttname"><a href="classProstopadloscianSCN.html">ProstopadloscianSCN</a></div><div class="ttdoc">ProstopadloscianSCN jako Prostopadloscian w ukladzie globalnym. </div><div class="ttdef"><b>Definition:</b> ProstopadloscianSCN.hh:21</div></div>
+<div class="ttc" id="Prostopadloscian_8hh_html"><div class="ttname"><a href="Prostopadloscian_8hh.html">Prostopadloscian.hh</a></div><div class="ttdoc">Zawiera definicję klasy Prostopadloscian. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

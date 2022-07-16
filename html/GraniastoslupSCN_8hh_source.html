@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Podwodny II: Plik źródłowy inc/GraniastoslupSCN.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Podwodny II
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GraniastoslupSCN.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="GraniastoslupSCN_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRANIASTOSLUPSCN_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GRANIASTOSLUPSCN_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Graniastoslup_8hh.html">Graniastoslup.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGraniastoslupSCN.html">GraniastoslupSCN</a>: <span class="keyword">public</span> <a class="code" href="classGraniastoslup.html">Graniastoslup</a> </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#abd53a52e6fa9127c98d3922b4134fe67">   30</a></span>&#160;    std::string <a class="code" href="classGraniastoslupSCN.html#abd53a52e6fa9127c98d3922b4134fe67">_Plik_Wsp_Globalne</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#a9fd5ceb4bf6119ef152db01d43d4925c">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGraniastoslupSCN.html#a9fd5ceb4bf6119ef152db01d43d4925c">_Kat_Orientacji_OZ</a>;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#a6c82bb652a2a7ebefc166864af4be36a">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGraniastoslupSCN.html#a6c82bb652a2a7ebefc166864af4be36a">_Kat_Orientacji_OX</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#a8d6e1399862324d18f3dee74c41212d0">   50</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <a class="code" href="classGraniastoslupSCN.html#a8d6e1399862324d18f3dee74c41212d0">_Wek_Translacji</a>;</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#a848f8d3f0298dda442fab7acec295f80">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraniastoslupSCN.html#a848f8d3f0298dda442fab7acec295f80">Zmien_kat_wlasny</a>(){_Kat_Orientacji_OX += DOKLADNOSC_KATA_ODSWIEZANIA;}</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classGraniastoslupSCN.html#a1cf442360ec14fc7fa22af9ddefd1d35">GraniastoslupSCN</a>();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#a6c761ec9040c78b88e8f927bbe1fefb2">   75</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraniastoslupSCN.html#a6c761ec9040c78b88e8f927bbe1fefb2">WybierzPlikGlob</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *NazwaPliku){_Plik_Wsp_Globalne = NazwaPliku;}</div><div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#ad3d658eb048fd25af6a31a6416e02908">   84</a></span>&#160;    <span class="keyword">const</span> std::string <a class="code" href="classGraniastoslupSCN.html#ad3d658eb048fd25af6a31a6416e02908">PodajNazwePlikuGlob</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classGraniastoslupSCN.html#abd53a52e6fa9127c98d3922b4134fe67">_Plik_Wsp_Globalne</a>;}</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classGraniastoslupSCN.html#a096492db05264adae9306f5fb50cc3c9">WyznaczWsp</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGraniastoslupSCN.html#a4bf899d8eba989560c5955748c2c5204">ObliczGlobalne</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGraniastoslupSCN.html#a279b52ec2cb4c39f1025089695388a2a">WybierzPliki</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *NazwaPlikuWe, <span class="keyword">const</span> <span class="keywordtype">char</span> *NazwaPlikuWy, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numer);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraniastoslupSCN.html#af074e119fe4e8a34d4be489d4d5512fe">Zmien_o_kat</a>(<span class="keywordtype">int</span> kat);</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraniastoslupSCN.html#a66b1dda997b41aaa596ad6b953f06c8c">Zmien_o_kat_wlasny</a>(<span class="keywordtype">int</span> kat);</div><div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#a65db4e5bc006a5969f5a2ebb8b2adaea">  160</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraniastoslupSCN.html#a65db4e5bc006a5969f5a2ebb8b2adaea">Zmien_o_translacje</a>(<a class="code" href="classSWektor.html">Wektor3D</a> Translacja){_Wek_Translacji = _Wek_Translacji + Translacja;}</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    </div><div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#a22fa17548fa2785b1c9850bb166fa1e7">  168</a></span>&#160;    <span class="keywordtype">int</span> <span class="keyword">const</span> <a class="code" href="classGraniastoslupSCN.html#a22fa17548fa2785b1c9850bb166fa1e7">PodajKatOrientacji</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classGraniastoslupSCN.html#a9fd5ceb4bf6119ef152db01d43d4925c">_Kat_Orientacji_OZ</a>;}</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div><div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classGraniastoslupSCN.html#a48c31869ef862c487bb511d8a121005b">  176</a></span>&#160;    <a class="code" href="classSWektor.html">Wektor3D</a> <span class="keyword">const</span> <a class="code" href="classGraniastoslupSCN.html#a48c31869ef862c487bb511d8a121005b">PodajPolozenie</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classGraniastoslupSCN.html#a8d6e1399862324d18f3dee74c41212d0">_Wek_Translacji</a>;}</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;};</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classGraniastoslupSCN_html"><div class="ttname"><a href="classGraniastoslupSCN.html">GraniastoslupSCN</a></div><div class="ttdoc">GraniastoslupSCN jako Graniastoslup w ukladzie globalnym. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:23</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a8d6e1399862324d18f3dee74c41212d0"><div class="ttname"><a href="classGraniastoslupSCN.html#a8d6e1399862324d18f3dee74c41212d0">GraniastoslupSCN::_Wek_Translacji</a></div><div class="ttdeci">Wektor3D _Wek_Translacji</div><div class="ttdoc">Pole przechowuje wektor translacji bryly. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:50</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a9fd5ceb4bf6119ef152db01d43d4925c"><div class="ttname"><a href="classGraniastoslupSCN.html#a9fd5ceb4bf6119ef152db01d43d4925c">GraniastoslupSCN::_Kat_Orientacji_OZ</a></div><div class="ttdeci">int _Kat_Orientacji_OZ</div><div class="ttdoc">Pole przechowuje miare kata orientacjiOZ. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:36</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a65db4e5bc006a5969f5a2ebb8b2adaea"><div class="ttname"><a href="classGraniastoslupSCN.html#a65db4e5bc006a5969f5a2ebb8b2adaea">GraniastoslupSCN::Zmien_o_translacje</a></div><div class="ttdeci">void Zmien_o_translacje(Wektor3D Translacja)</div><div class="ttdoc">Metoda umozliwia zmiane polozenia bryly. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:160</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_ad3d658eb048fd25af6a31a6416e02908"><div class="ttname"><a href="classGraniastoslupSCN.html#ad3d658eb048fd25af6a31a6416e02908">GraniastoslupSCN::PodajNazwePlikuGlob</a></div><div class="ttdeci">const std::string PodajNazwePlikuGlob() const</div><div class="ttdoc">Metoda umozliwia pobranie nazwy przypisanego pliku ze wspolrzednymi globalnymi. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:84</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a279b52ec2cb4c39f1025089695388a2a"><div class="ttname"><a href="classGraniastoslupSCN.html#a279b52ec2cb4c39f1025089695388a2a">GraniastoslupSCN::WybierzPliki</a></div><div class="ttdeci">bool WybierzPliki(const char *NazwaPlikuWe, const char *NazwaPlikuWy, unsigned int numer)</div><div class="ttdoc">Metoda umozliwia przypisanie obiektowi dwoch plikow. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.cpp:119</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_abd53a52e6fa9127c98d3922b4134fe67"><div class="ttname"><a href="classGraniastoslupSCN.html#abd53a52e6fa9127c98d3922b4134fe67">GraniastoslupSCN::_Plik_Wsp_Globalne</a></div><div class="ttdeci">std::string _Plik_Wsp_Globalne</div><div class="ttdoc">Pole przechowuje nazwe pliku z danymi globalnymi. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:30</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a22fa17548fa2785b1c9850bb166fa1e7"><div class="ttname"><a href="classGraniastoslupSCN.html#a22fa17548fa2785b1c9850bb166fa1e7">GraniastoslupSCN::PodajKatOrientacji</a></div><div class="ttdeci">int const PodajKatOrientacji() const</div><div class="ttdoc">Metoda umozliwia pobranie wartosci kata orientacji bryly. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:168</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a6c82bb652a2a7ebefc166864af4be36a"><div class="ttname"><a href="classGraniastoslupSCN.html#a6c82bb652a2a7ebefc166864af4be36a">GraniastoslupSCN::_Kat_Orientacji_OX</a></div><div class="ttdeci">int _Kat_Orientacji_OX</div><div class="ttdoc">Pole przechowuje miare kata orientacjiOX. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:42</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a66b1dda997b41aaa596ad6b953f06c8c"><div class="ttname"><a href="classGraniastoslupSCN.html#a66b1dda997b41aaa596ad6b953f06c8c">GraniastoslupSCN::Zmien_o_kat_wlasny</a></div><div class="ttdeci">void Zmien_o_kat_wlasny(int kat)</div><div class="ttdoc">Metoda umozliwia zmiane orientacji bryly wokol osi OX. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.cpp:136</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a1cf442360ec14fc7fa22af9ddefd1d35"><div class="ttname"><a href="classGraniastoslupSCN.html#a1cf442360ec14fc7fa22af9ddefd1d35">GraniastoslupSCN::GraniastoslupSCN</a></div><div class="ttdeci">GraniastoslupSCN()</div><div class="ttdoc">Konstruktor obiektu GraniastoslupSCN. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.cpp:13</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a6c761ec9040c78b88e8f927bbe1fefb2"><div class="ttname"><a href="classGraniastoslupSCN.html#a6c761ec9040c78b88e8f927bbe1fefb2">GraniastoslupSCN::WybierzPlikGlob</a></div><div class="ttdeci">void WybierzPlikGlob(const char *NazwaPliku)</div><div class="ttdoc">Metoda umozliwia przypisanie obiektowi pliku ze wspolrzednymi globalnymi. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:75</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a4bf899d8eba989560c5955748c2c5204"><div class="ttname"><a href="classGraniastoslupSCN.html#a4bf899d8eba989560c5955748c2c5204">GraniastoslupSCN::ObliczGlobalne</a></div><div class="ttdeci">bool ObliczGlobalne() const</div><div class="ttdoc">Realizuje przeksztalcenie wspolrzednych lokalnych do ukladu globalnego. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.cpp:63</div></div>
+<div class="ttc" id="classSWektor_html"><div class="ttname"><a href="classSWektor.html">SWektor&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a848f8d3f0298dda442fab7acec295f80"><div class="ttname"><a href="classGraniastoslupSCN.html#a848f8d3f0298dda442fab7acec295f80">GraniastoslupSCN::Zmien_kat_wlasny</a></div><div class="ttdeci">void Zmien_kat_wlasny()</div><div class="ttdoc">Zmiana kata wlasnego, tj. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:56</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a096492db05264adae9306f5fb50cc3c9"><div class="ttname"><a href="classGraniastoslupSCN.html#a096492db05264adae9306f5fb50cc3c9">GraniastoslupSCN::WyznaczWsp</a></div><div class="ttdeci">virtual bool WyznaczWsp() override</div><div class="ttdoc">Metoda umozliwia wyznaczenie obecnych wspolrzednych skrajnych bryly. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.cpp:19</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_a48c31869ef862c487bb511d8a121005b"><div class="ttname"><a href="classGraniastoslupSCN.html#a48c31869ef862c487bb511d8a121005b">GraniastoslupSCN::PodajPolozenie</a></div><div class="ttdeci">Wektor3D const PodajPolozenie() const</div><div class="ttdoc">Metoda umozliwia pobranie wartosci wektora polozenia bryly. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.hh:176</div></div>
+<div class="ttc" id="classGraniastoslupSCN_html_af074e119fe4e8a34d4be489d4d5512fe"><div class="ttname"><a href="classGraniastoslupSCN.html#af074e119fe4e8a34d4be489d4d5512fe">GraniastoslupSCN::Zmien_o_kat</a></div><div class="ttdeci">void Zmien_o_kat(int kat)</div><div class="ttdoc">Metoda umozliwia zmiane orientacji bryly wokol osi OZ. </div><div class="ttdef"><b>Definition:</b> GraniastoslupSCN.cpp:127</div></div>
+<div class="ttc" id="Graniastoslup_8hh_html"><div class="ttname"><a href="Graniastoslup_8hh.html">Graniastoslup.hh</a></div><div class="ttdoc">Zawiera definicję klasy Graniastoslup. </div></div>
+<div class="ttc" id="classGraniastoslup_html"><div class="ttname"><a href="classGraniastoslup.html">Graniastoslup</a></div><div class="ttdoc">Graniastoslup jako bryla przestrzenna o promieniu i srodku lokalnym. </div><div class="ttdef"><b>Definition:</b> Graniastoslup.hh:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

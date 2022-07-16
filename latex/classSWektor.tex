@@ -1,0 +1,105 @@
+\hypertarget{classSWektor}{}\section{Dokumentacja szablonu klasy S\+Wektor$<$ Typ, Wymiar $>$}
+\label{classSWektor}\index{S\+Wektor$<$ Typ, Wymiar $>$@{S\+Wektor$<$ Typ, Wymiar $>$}}
+
+
+Klasa modeluje pojecie wektora.  
+
+
+
+
+{\ttfamily \#include $<$S\+Wektor.\+hh$>$}
+
+
+
+Diagram współpracy dla S\+Wektor$<$ Typ, Wymiar $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classSWektor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSWektor_a30dfcfc08257aeeb41bc96c32704f431}\label{classSWektor_a30dfcfc08257aeeb41bc96c32704f431}} 
+const Typ {\bfseries operator\mbox{[}$\,$\mbox{]}} (unsigned int indeks) const
+\item 
+\mbox{\Hypertarget{classSWektor_a39a12c33739ea481b627f2eaea3c4658}\label{classSWektor_a39a12c33739ea481b627f2eaea3c4658}} 
+Typ \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (unsigned int indeks)
+\item 
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSWektor_ad6edecba069a5fa43685eae4de64126a}{operator-\/} (const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&wek) const
+\item 
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSWektor_a088f294837df1f61cb577c26646ba76a}{operator+} (const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&wek) const
+\item 
+Typ \hyperlink{classSWektor_a216a89c4fa018c75ae11af6e0cf26b23}{operator$\ast$} (const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&wek) const
+\item 
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSWektor_a58efd989f2647747bcc68e9650e38647}{operator$\ast$} (Typ liczba) const
+\item 
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSWektor_a80fde5a5dca1d5b261bda6c4da826134}{operator/} (Typ liczba) const
+\item 
+void \hyperlink{classSWektor_a03255e5b60c400972aad2a56f06832c4}{operator=} (const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&wek)
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSWektor_a5b623317072fcf2d05ece0e30a819c81}\label{classSWektor_a5b623317072fcf2d05ece0e30a819c81}} 
+Typ {\bfseries \+\_\+\+Wsp} \mbox{[}Wymiar\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Typ, int Wymiar$>$\newline
+class S\+Wektor$<$ Typ, Wymiar $>$}
+
+Klasa modeluje pojecie wektora. 
+
+Klasa modeluje pojęcie wektora jako jednowymiarowej tablicy elementów double, o rozmiarze R\+O\+Z\+M\+I\+AR. Zawiera metody umożliwiające pobranie wartosci wybranego pola tablicy klasy, czy też jego modyfikację. Ponadto umożliwia wykonywanie działań arytmetycznych na wektorach, mnożenie i dzielenie wektora przez liczbę typu double, podanie długości wektora oraz przypisanie jednego wektora do drugiego. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classSWektor_a216a89c4fa018c75ae11af6e0cf26b23}\label{classSWektor_a216a89c4fa018c75ae11af6e0cf26b23}} 
+\index{S\+Wektor@{S\+Wektor}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!S\+Wektor@{S\+Wektor}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Typ, int Wymiar$>$ \\
+Typ \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&}]{w2 }\end{DoxyParamCaption}) const}
+
+Wykonanie operacji mnożenia wektorów skalaranie Argumenty\+: Argument domyslny -\/ staly obiekt klasy \hyperlink{classSWektor}{S\+Wektor} w2 -\/ referencja do stałego obiektu klasy \hyperlink{classSWektor}{S\+Wektor} Zwraca\+: wynik -\/ iloczyn skalarny wektorów wywołania \mbox{\Hypertarget{classSWektor_a58efd989f2647747bcc68e9650e38647}\label{classSWektor_a58efd989f2647747bcc68e9650e38647}} 
+\index{S\+Wektor@{S\+Wektor}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!S\+Wektor@{S\+Wektor}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Typ, int Wymiar$>$ \\
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{Typ}]{liczba }\end{DoxyParamCaption}) const}
+
+Wykonanie operacji mnożenia wektora przez liczbę typu Typ Argumenty\+: Argument domyslny -\/ staly obiekt klasy \hyperlink{classSWektor}{S\+Wektor} liczba -\/ referencja do stałego obiektu typu Typ Zwraca\+: wynik -\/ wektor bedacy wynikiem operacji \mbox{\Hypertarget{classSWektor_a088f294837df1f61cb577c26646ba76a}\label{classSWektor_a088f294837df1f61cb577c26646ba76a}} 
+\index{S\+Wektor@{S\+Wektor}!operator+@{operator+}}
+\index{operator+@{operator+}!S\+Wektor@{S\+Wektor}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename Typ, int Wymiar$>$ \\
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&}]{w2 }\end{DoxyParamCaption}) const}
+
+Wykonanie operacji dodawania wektorów Argumenty\+: Argument domyslny -\/ staly obiekt klasy \hyperlink{classSWektor}{S\+Wektor} w2 -\/ referencja do stałego obiektu klasy \hyperlink{classSWektor}{S\+Wektor} Zwraca\+: pom -\/ wektor bedacy sumą dwóch wektorów wywołania \mbox{\Hypertarget{classSWektor_ad6edecba069a5fa43685eae4de64126a}\label{classSWektor_ad6edecba069a5fa43685eae4de64126a}} 
+\index{S\+Wektor@{S\+Wektor}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!S\+Wektor@{S\+Wektor}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$typename Typ, int Wymiar$>$ \\
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&}]{w2 }\end{DoxyParamCaption}) const}
+
+Wykonanie operacji odejmowania wektorów Argumenty\+: Argument domyslny -\/ staly obiekt klasy \hyperlink{classSWektor}{S\+Wektor} w2 -\/ referencja do stałego obiektu klasy \hyperlink{classSWektor}{S\+Wektor} Zwraca\+: pom -\/ wektor bedacy różnicą dwóch wektorów wywołania \mbox{\Hypertarget{classSWektor_a80fde5a5dca1d5b261bda6c4da826134}\label{classSWektor_a80fde5a5dca1d5b261bda6c4da826134}} 
+\index{S\+Wektor@{S\+Wektor}!operator/@{operator/}}
+\index{operator/@{operator/}!S\+Wektor@{S\+Wektor}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily template$<$typename Typ, int Wymiar$>$ \\
+\hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$\+::operator/ (\begin{DoxyParamCaption}\item[{Typ}]{liczba }\end{DoxyParamCaption}) const}
+
+Wykonanie operacji dzielenia wektora przez liczbę typu Typ Argumenty\+: Argument domyslny -\/ staly obiekt klasy \hyperlink{classSWektor}{S\+Wektor} liczba -\/ referencja do stałego obiektu typu Typ Zwraca\+: wynik -\/ wektor bedacy wynikiem operacji \mbox{\Hypertarget{classSWektor_a03255e5b60c400972aad2a56f06832c4}\label{classSWektor_a03255e5b60c400972aad2a56f06832c4}} 
+\index{S\+Wektor@{S\+Wektor}!operator=@{operator=}}
+\index{operator=@{operator=}!S\+Wektor@{S\+Wektor}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Typ, int Wymiar$>$ \\
+void \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classSWektor}{S\+Wektor}$<$ Typ, Wymiar $>$ \&}]{w2 }\end{DoxyParamCaption})}
+
+Wykonanie operacji podstawienia wartości elementów jednego wektora do elemenetów drugiego wektora. Argumenty\+: Argument domyslny -\/ modyfikowalny obiekt klasy \hyperlink{classSWektor}{S\+Wektor} w2 -\/ referencja do stałego obiektu typu \hyperlink{classSWektor}{S\+Wektor} 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{SWektor_8hh}{S\+Wektor.\+hh}\end{DoxyCompactItemize}

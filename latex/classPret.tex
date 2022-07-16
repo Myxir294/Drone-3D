@@ -1,0 +1,76 @@
+\hypertarget{classPret}{}\section{Dokumentacja klasy Pret}
+\label{classPret}\index{Pret@{Pret}}
+
+
+\hyperlink{classPret}{Pret} jako obiekt graficzny.  
+
+
+
+
+{\ttfamily \#include $<$Pret.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Pret
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{classPret__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Pret\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classPret__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classPret_affe3fdc72a84022eb5bbfddbf24cc2fc}{Wyznacz\+Wsp} () override
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\hyperlink{classPret}{Pret} jako obiekt graficzny. 
+
+Klasa umożliwia interpretowanie obiektu jako preta o okreslonych wspolrzednych w ukladzie kartezjanskim. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classPret_affe3fdc72a84022eb5bbfddbf24cc2fc}\label{classPret_affe3fdc72a84022eb5bbfddbf24cc2fc}} 
+\index{Pret@{Pret}!Wyznacz\+Wsp@{Wyznacz\+Wsp}}
+\index{Wyznacz\+Wsp@{Wyznacz\+Wsp}!Pret@{Pret}}
+\subsubsection{\texorpdfstring{Wyznacz\+Wsp()}{WyznaczWsp()}}
+{\footnotesize\ttfamily bool Pret\+::\+Wyznacz\+Wsp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly. 
+
+Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly, nadpisujac w odpowiedni sposob metode \hyperlink{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}{Obiekt\+Sceny\+::\+Wyznacz\+Wsp()}
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekt musi miec poprawnie zadane nazwy plikow ze wspolrzednymi 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ proces przebiegł pomyślnie \\
+\hline
+{\em false} & -\/ nie udało sie wyznaczyc wspolrzednych skrajnych \\
+\hline
+\end{DoxyRetVals}
+
+
+Implementuje \hyperlink{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}{Obiekt\+Sceny}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{Pret_8hh}{Pret.\+hh}\item 
+src/\hyperlink{Pret_8cpp}{Pret.\+cpp}\end{DoxyCompactItemize}

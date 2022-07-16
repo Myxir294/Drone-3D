@@ -1,0 +1,304 @@
+\hypertarget{classDron}{}\section{Dokumentacja klasy Dron}
+\label{classDron}\index{Dron@{Dron}}
+
+
+Definicja klasy \hyperlink{classDron}{Dron}.  
+
+
+
+
+{\ttfamily \#include $<$Dron.\+hh$>$}
+
+
+
+Diagram współpracy dla Dron\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDron__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN} \& \hyperlink{classDron_addd3f76aedda33de1c13d7a0cd5bea69}{Wez\+\_\+\+Rdzen} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego \+\_\+\+Rdzen. \end{DoxyCompactList}\item 
+\hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} \& \hyperlink{classDron_a18b1d0162c88a8e93322d6eb5d7b64f0}{Wez\+\_\+\+Lewa\+\_\+\+Srube} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego \+\_\+\+Lewa\+Sruba. \end{DoxyCompactList}\item 
+\hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} \& \hyperlink{classDron_a1bdfbac069ae0f0ef1b168f0f2d9bc6e}{Wez\+\_\+\+Prawa\+\_\+\+Srube} ()
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego \+\_\+\+Prawa\+Sruba. \end{DoxyCompactList}\item 
+bool \hyperlink{classDron_a5ddaabc5c441d8f2f204cc398e1b0db2}{Sprawdz\+Mozliwosc\+Ruchu} (\hyperlink{classObiektSceny}{Obiekt\+Sceny} \&obiekt)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia sprawdzenie mozliwosci wystapienia kolizji drona z przeszkoda. \end{DoxyCompactList}\item 
+void \hyperlink{classDron_a75782b1ce9cd9f911e45f87f75ae95d6}{Zmien\+\_\+o\+\_\+kat} (unsigned int kat)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zmiane orientacji drona wokol osi OZ. \end{DoxyCompactList}\item 
+void \hyperlink{classDron_a6fcd15ec24881f0e92e84fc04ddd9a9a}{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny} (unsigned int kat)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zmiane orientacji srub wokol osi OX. \end{DoxyCompactList}\item 
+void \hyperlink{classDron_a5f5867d7f7adb7e540ef762a782a4103}{Zmien\+\_\+o\+\_\+translacje} (\hyperlink{classSWektor}{Wektor3D} Translacja)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia zmiane polozenia drona. \end{DoxyCompactList}\item 
+bool \hyperlink{classDron_ac0c17bd50d8f7c11457ab69cb2237abb}{Oblicz\+Globalne} () const
+\begin{DoxyCompactList}\small\item\em Realizuje przeksztalcenie wspolrzednych lokalnych drona do ukladu globalnego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classDron_a0d88b00af782f5e914887b2b089e1b9c}{Sprawdz\+Mozliwosc\+Ruchu\+Sruby} (\hyperlink{classObiektSceny}{Obiekt\+Sceny} \&obiekt, \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} \&sruba)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia sprawdzenie mozliwosci wystapienia kolizji sruby z przeszkoda. \end{DoxyCompactList}\item 
+bool \hyperlink{classDron_a4cff7a2c46fe43e32df58c8245d9d0d3}{Sprawdz\+Mozliwosc\+Ruchu\+Rdzenia} (\hyperlink{classObiektSceny}{Obiekt\+Sceny} \&obiekt)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia sprawdzenie mozliwosci wystapienia kolizji rdzenia z przeszkoda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN} \hyperlink{classDron_af62e07b9d016168d5a129515f65f1609}{\+\_\+\+Rdzen}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje rdzen drona. \end{DoxyCompactList}\item 
+\hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} \hyperlink{classDron_a16ece01f1022ab49f1017f010db254b1}{\+\_\+\+Lewa\+Sruba}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje lewa srube drona. \end{DoxyCompactList}\item 
+\hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} \hyperlink{classDron_abcf5121c081a80ec44fbfe1de9784f1d}{\+\_\+\+Prawa\+Sruba}
+\begin{DoxyCompactList}\small\item\em Pole przechowuje prawa srube drona. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \hyperlink{classDron}{Dron}. 
+
+Definicja klasy \hyperlink{classDron}{Dron}, sluzacej do interpretacji zadanego obiektu jako drona zdolnego do bycia przemieszczonym i obroconym z poziomu metod sceny. Elementami skladowymi drona sa obiekty klasy \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} oznaczajace sruby oraz jeden obiekt klasy \hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN} oznaczajacy rdzen drona. \hyperlink{classDron}{Dron} ponadto jest w stanie wykryc kolizje z dostarczonym mu obiektem klasy \hyperlink{classObiektSceny}{Obiekt\+Sceny} 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classDron_ac0c17bd50d8f7c11457ab69cb2237abb}\label{classDron_ac0c17bd50d8f7c11457ab69cb2237abb}} 
+\index{Dron@{Dron}!Oblicz\+Globalne@{Oblicz\+Globalne}}
+\index{Oblicz\+Globalne@{Oblicz\+Globalne}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Oblicz\+Globalne()}{ObliczGlobalne()}}
+{\footnotesize\ttfamily bool Dron\+::\+Oblicz\+Globalne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Realizuje przeksztalcenie wspolrzednych lokalnych drona do ukladu globalnego. 
+
+Realizuje przeksztalcenie wspolrzednych lokalnych kazdego z elementow skladowych drona do ukladu globalnego biorac pod uwage ich kat orientacji oraz wektory translacji
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekty musza byc poprawnie zainicjalizowane 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ operacja przebiegla pomyslnie \\
+\hline
+{\em false} & -\/ nie udalo sie okreslic wspolrzednych globalnych -\/ dla przynajmniej jednego obiektu wystapil blad prawidlowego odczytania wspolrzednych z pliku {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Lokalne} lub blad zapisu do pliku {\itshape \+\_\+\+Plik\+\_\+\+Wsp\+\_\+\+Globalne} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classDron_a5ddaabc5c441d8f2f204cc398e1b0db2}\label{classDron_a5ddaabc5c441d8f2f204cc398e1b0db2}} 
+\index{Dron@{Dron}!Sprawdz\+Mozliwosc\+Ruchu@{Sprawdz\+Mozliwosc\+Ruchu}}
+\index{Sprawdz\+Mozliwosc\+Ruchu@{Sprawdz\+Mozliwosc\+Ruchu}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Sprawdz\+Mozliwosc\+Ruchu()}{SprawdzMozliwoscRuchu()}}
+{\footnotesize\ttfamily bool Dron\+::\+Sprawdz\+Mozliwosc\+Ruchu (\begin{DoxyParamCaption}\item[{\hyperlink{classObiektSceny}{Obiekt\+Sceny} \&}]{obiekt }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia sprawdzenie mozliwosci wystapienia kolizji drona z przeszkoda. 
+
+Metoda umozliwia wykrycie kolizji drona z przeszkoda, wykorzystujac w tym celu metody prywatne \hyperlink{}{Dron\+:\+Sprawdz\+Mozliwosc\+Ruchu\+Sruby} i \hyperlink{classDron_a4cff7a2c46fe43e32df58c8245d9d0d3}{Dron\+::\+Sprawdz\+Mozliwosc\+Ruchu\+Rdzenia}
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Zarowno dron jak i przeszkoda musza byc poprawnie zainicjalizowane 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em obiekt} & -\/ referencja do przeszkody \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ ruch jest mozliwy \\
+\hline
+{\em false} & -\/ ruch spowodowalby kolizje \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classDron_a4cff7a2c46fe43e32df58c8245d9d0d3}\label{classDron_a4cff7a2c46fe43e32df58c8245d9d0d3}} 
+\index{Dron@{Dron}!Sprawdz\+Mozliwosc\+Ruchu\+Rdzenia@{Sprawdz\+Mozliwosc\+Ruchu\+Rdzenia}}
+\index{Sprawdz\+Mozliwosc\+Ruchu\+Rdzenia@{Sprawdz\+Mozliwosc\+Ruchu\+Rdzenia}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Sprawdz\+Mozliwosc\+Ruchu\+Rdzenia()}{SprawdzMozliwoscRuchuRdzenia()}}
+{\footnotesize\ttfamily bool Dron\+::\+Sprawdz\+Mozliwosc\+Ruchu\+Rdzenia (\begin{DoxyParamCaption}\item[{\hyperlink{classObiektSceny}{Obiekt\+Sceny} \&}]{obiekt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda umozliwia sprawdzenie mozliwosci wystapienia kolizji rdzenia z przeszkoda. 
+
+Metoda umozliwia wykrycie kolizji rdzenia z przeszkoda, wyznaczajac jego wspolrzedne skrajne i porownujac ze wspolrzednymi skrajnymi przeszkody.
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Zarowno rdzen jak i przeszkoda musza byc poprawnie zainicjalizowane 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em obiekt} & -\/ referencja do przeszkody \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ ruch jest mozliwy \\
+\hline
+{\em false} & -\/ ruch spowodowalby kolizje \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classDron_a0d88b00af782f5e914887b2b089e1b9c}\label{classDron_a0d88b00af782f5e914887b2b089e1b9c}} 
+\index{Dron@{Dron}!Sprawdz\+Mozliwosc\+Ruchu\+Sruby@{Sprawdz\+Mozliwosc\+Ruchu\+Sruby}}
+\index{Sprawdz\+Mozliwosc\+Ruchu\+Sruby@{Sprawdz\+Mozliwosc\+Ruchu\+Sruby}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Sprawdz\+Mozliwosc\+Ruchu\+Sruby()}{SprawdzMozliwoscRuchuSruby()}}
+{\footnotesize\ttfamily bool Dron\+::\+Sprawdz\+Mozliwosc\+Ruchu\+Sruby (\begin{DoxyParamCaption}\item[{\hyperlink{classObiektSceny}{Obiekt\+Sceny} \&}]{obiekt,  }\item[{\hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} \&}]{sruba }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda umozliwia sprawdzenie mozliwosci wystapienia kolizji sruby z przeszkoda. 
+
+Metoda umozliwia wykrycie kolizji sruby z przeszkoda, wyznaczajac jej wspolrzedne skrajne i porownujac ze wspolrzednymi skrajnymi przeszkody.
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Zarowno sruba jak i przeszkoda musza byc poprawnie zainicjalizowane 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em obiekt} & -\/ referencja do przeszkody \\
+\hline
+\mbox{\tt in}  & {\em sruba} & -\/ referencja do jednej ze srub \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ ruch jest mozliwy \\
+\hline
+{\em false} & -\/ ruch spowodowalby kolizje \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classDron_a18b1d0162c88a8e93322d6eb5d7b64f0}\label{classDron_a18b1d0162c88a8e93322d6eb5d7b64f0}} 
+\index{Dron@{Dron}!Wez\+\_\+\+Lewa\+\_\+\+Srube@{Wez\+\_\+\+Lewa\+\_\+\+Srube}}
+\index{Wez\+\_\+\+Lewa\+\_\+\+Srube@{Wez\+\_\+\+Lewa\+\_\+\+Srube}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Wez\+\_\+\+Lewa\+\_\+\+Srube()}{Wez\_Lewa\_Srube()}}
+{\footnotesize\ttfamily \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN}\& Dron\+::\+Wez\+\_\+\+Lewa\+\_\+\+Srube (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego \+\_\+\+Lewa\+Sruba. 
+
+Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego \+\_\+\+Lewa\+Sruba 
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em \+\_\+\+Lewa\+Sruba} & -\/ referencja do obiektu klasy \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classDron_a1bdfbac069ae0f0ef1b168f0f2d9bc6e}\label{classDron_a1bdfbac069ae0f0ef1b168f0f2d9bc6e}} 
+\index{Dron@{Dron}!Wez\+\_\+\+Prawa\+\_\+\+Srube@{Wez\+\_\+\+Prawa\+\_\+\+Srube}}
+\index{Wez\+\_\+\+Prawa\+\_\+\+Srube@{Wez\+\_\+\+Prawa\+\_\+\+Srube}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Wez\+\_\+\+Prawa\+\_\+\+Srube()}{Wez\_Prawa\_Srube()}}
+{\footnotesize\ttfamily \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN}\& Dron\+::\+Wez\+\_\+\+Prawa\+\_\+\+Srube (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego \+\_\+\+Prawa\+Sruba. 
+
+Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego \+\_\+\+Prawa\+Sruba 
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em \+\_\+\+Prawa\+Sruba} & -\/ referencja do obiektu klasy \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classDron_addd3f76aedda33de1c13d7a0cd5bea69}\label{classDron_addd3f76aedda33de1c13d7a0cd5bea69}} 
+\index{Dron@{Dron}!Wez\+\_\+\+Rdzen@{Wez\+\_\+\+Rdzen}}
+\index{Wez\+\_\+\+Rdzen@{Wez\+\_\+\+Rdzen}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Wez\+\_\+\+Rdzen()}{Wez\_Rdzen()}}
+{\footnotesize\ttfamily \hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN}\& Dron\+::\+Wez\+\_\+\+Rdzen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego \+\_\+\+Rdzen. 
+
+Metoda umozliwia zewnetrzne odnoszenie sie do obiektu skladowego \+\_\+\+Rdzen 
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em \+\_\+\+Rdzen} & -\/ referencja do obiektu klasy \hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN} \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classDron_a75782b1ce9cd9f911e45f87f75ae95d6}\label{classDron_a75782b1ce9cd9f911e45f87f75ae95d6}} 
+\index{Dron@{Dron}!Zmien\+\_\+o\+\_\+kat@{Zmien\+\_\+o\+\_\+kat}}
+\index{Zmien\+\_\+o\+\_\+kat@{Zmien\+\_\+o\+\_\+kat}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Zmien\+\_\+o\+\_\+kat()}{Zmien\_o\_kat()}}
+{\footnotesize\ttfamily void Dron\+::\+Zmien\+\_\+o\+\_\+kat (\begin{DoxyParamCaption}\item[{unsigned int}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia zmiane orientacji drona wokol osi OZ. 
+
+Metoda umozliwia zmiane kata orientacji drona poprzez zmiany katow zapisanych w polach obiektow skladowych {\itshape \+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OZ} zwiekszajac ja o wartosc zadana w parametrze {\itshape kat}. Jezeli wartosc kata orientacji wyniesie 360 lub -\/360, zostana one wyzerowana w celu zmniejszenia bledow dokladnosci obliczen.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em kat} & -\/ Kat o jaki zmieniona zostanie orientacja OZ kazdego z obiektu skladowych \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDron_a6fcd15ec24881f0e92e84fc04ddd9a9a}\label{classDron_a6fcd15ec24881f0e92e84fc04ddd9a9a}} 
+\index{Dron@{Dron}!Zmien\+\_\+o\+\_\+kat\+\_\+wlasny@{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny}}
+\index{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny@{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Zmien\+\_\+o\+\_\+kat\+\_\+wlasny()}{Zmien\_o\_kat\_wlasny()}}
+{\footnotesize\ttfamily void Dron\+::\+Zmien\+\_\+o\+\_\+kat\+\_\+wlasny (\begin{DoxyParamCaption}\item[{unsigned int}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia zmiane orientacji srub wokol osi OX. 
+
+Metoda umozliwia zmiane kata orientacji srub zapisanego w ich polach {\itshape \+\_\+\+Kat\+\_\+\+Orientacji\+\_\+\+OX} zwiekszajac ja o wartosc zadana w parametrze {\itshape kat}. Jezeli wartosc kata orientacji wyniesie 360 lub -\/360, zostaje ona wyzerowana w celu zmniejszenia bledow dokladnosci obliczen.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em kat} & -\/ Kat o jaki zmieniona zostanie orientacja OX kazdej ze srub \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDron_a5f5867d7f7adb7e540ef762a782a4103}\label{classDron_a5f5867d7f7adb7e540ef762a782a4103}} 
+\index{Dron@{Dron}!Zmien\+\_\+o\+\_\+translacje@{Zmien\+\_\+o\+\_\+translacje}}
+\index{Zmien\+\_\+o\+\_\+translacje@{Zmien\+\_\+o\+\_\+translacje}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Zmien\+\_\+o\+\_\+translacje()}{Zmien\_o\_translacje()}}
+{\footnotesize\ttfamily void Dron\+::\+Zmien\+\_\+o\+\_\+translacje (\begin{DoxyParamCaption}\item[{\hyperlink{classSWektor}{Wektor3D}}]{Translacja }\end{DoxyParamCaption})}
+
+
+
+Metoda umozliwia zmiane polozenia drona. 
+
+Metoda umozliwia zmiane wektorow polozenia bryl skladowych zapisanych w ich polach {\itshape \+\_\+\+Wek\+\_\+\+Translacji} zwiekszajac ja o wektor zadany w parametrze {\itshape Translacja} 
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em Translacja} & -\/ Wektor o jaki zwiekszony zostanie wektor translacji kazdego z elementow skladowych \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{classDron_a16ece01f1022ab49f1017f010db254b1}\label{classDron_a16ece01f1022ab49f1017f010db254b1}} 
+\index{Dron@{Dron}!\+\_\+\+Lewa\+Sruba@{\+\_\+\+Lewa\+Sruba}}
+\index{\+\_\+\+Lewa\+Sruba@{\+\_\+\+Lewa\+Sruba}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{\+\_\+\+Lewa\+Sruba}{\_LewaSruba}}
+{\footnotesize\ttfamily \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} Dron\+::\+\_\+\+Lewa\+Sruba\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje lewa srube drona. 
+
+Pole przechowuje lewa srube drona \mbox{\Hypertarget{classDron_abcf5121c081a80ec44fbfe1de9784f1d}\label{classDron_abcf5121c081a80ec44fbfe1de9784f1d}} 
+\index{Dron@{Dron}!\+\_\+\+Prawa\+Sruba@{\+\_\+\+Prawa\+Sruba}}
+\index{\+\_\+\+Prawa\+Sruba@{\+\_\+\+Prawa\+Sruba}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{\+\_\+\+Prawa\+Sruba}{\_PrawaSruba}}
+{\footnotesize\ttfamily \hyperlink{classGraniastoslupSCN}{Graniastoslup\+S\+CN} Dron\+::\+\_\+\+Prawa\+Sruba\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje prawa srube drona. 
+
+Pole przechowuje prawa srube drona \mbox{\Hypertarget{classDron_af62e07b9d016168d5a129515f65f1609}\label{classDron_af62e07b9d016168d5a129515f65f1609}} 
+\index{Dron@{Dron}!\+\_\+\+Rdzen@{\+\_\+\+Rdzen}}
+\index{\+\_\+\+Rdzen@{\+\_\+\+Rdzen}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{\+\_\+\+Rdzen}{\_Rdzen}}
+{\footnotesize\ttfamily \hyperlink{classProstopadloscianSCN}{Prostopadloscian\+S\+CN} Dron\+::\+\_\+\+Rdzen\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole przechowuje rdzen drona. 
+
+Pole przechowuje rdzen drona 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{Dron_8hh}{Dron.\+hh}\item 
+src/\hyperlink{Dron_8cpp}{Dron.\+cpp}\end{DoxyCompactItemize}

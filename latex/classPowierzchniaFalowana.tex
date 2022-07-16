@@ -1,0 +1,76 @@
+\hypertarget{classPowierzchniaFalowana}{}\section{Dokumentacja klasy Powierzchnia\+Falowana}
+\label{classPowierzchniaFalowana}\index{Powierzchnia\+Falowana@{Powierzchnia\+Falowana}}
+
+
+\hyperlink{classPowierzchniaFalowana}{Powierzchnia\+Falowana} jako obiekt graficzny.  
+
+
+
+
+{\ttfamily \#include $<$Powierzchnia\+Falowana.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Powierzchnia\+Falowana
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classPowierzchniaFalowana__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Powierzchnia\+Falowana\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classPowierzchniaFalowana__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classPowierzchniaFalowana_ae9f43f9acfb3db49fc9931ca4917e049}{Wyznacz\+Wsp} () override
+\begin{DoxyCompactList}\small\item\em Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\hyperlink{classPowierzchniaFalowana}{Powierzchnia\+Falowana} jako obiekt graficzny. 
+
+Klasa umożliwia interpretowanie obiektu jako powierzchni falowanej o okreslonych wspolrzednych w ukladzie kartezjanskim. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classPowierzchniaFalowana_ae9f43f9acfb3db49fc9931ca4917e049}\label{classPowierzchniaFalowana_ae9f43f9acfb3db49fc9931ca4917e049}} 
+\index{Powierzchnia\+Falowana@{Powierzchnia\+Falowana}!Wyznacz\+Wsp@{Wyznacz\+Wsp}}
+\index{Wyznacz\+Wsp@{Wyznacz\+Wsp}!Powierzchnia\+Falowana@{Powierzchnia\+Falowana}}
+\subsubsection{\texorpdfstring{Wyznacz\+Wsp()}{WyznaczWsp()}}
+{\footnotesize\ttfamily bool Powierzchnia\+Falowana\+::\+Wyznacz\+Wsp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly. 
+
+Metoda umozliwia wyznaczenie wspolrzednych skrajnych bryly, nadpisujac w odpowiedni sposob metode \hyperlink{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}{Obiekt\+Sceny\+::\+Wyznacz\+Wsp()}
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Obiekt musi miec poprawnie zadane nazwy plikow ze wspolrzednymi 
+\end{DoxyPrecond}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ proces przebiegł pomyślnie \\
+\hline
+{\em false} & -\/ nie udało sie wyznaczyc wspolrzednych skrajnych \\
+\hline
+\end{DoxyRetVals}
+
+
+Implementuje \hyperlink{classObiektSceny_a24dd0332c0755d7155128639a9a3e2b4}{Obiekt\+Sceny}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{PowierzchniaFalowana_8hh}{Powierzchnia\+Falowana.\+hh}\item 
+src/\hyperlink{PowierzchniaFalowana_8cpp}{Powierzchnia\+Falowana.\+cpp}\end{DoxyCompactItemize}

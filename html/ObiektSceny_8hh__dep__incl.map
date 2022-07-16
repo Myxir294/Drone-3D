@@ -1,0 +1,21 @@
+<map id="inc/ObiektSceny.hh" name="inc/ObiektSceny.hh">
+<area shape="rect" id="node2" href="$Prostopadloscian_8hh.html" title="Zawiera definicję klasy Prostopadloscian. " alt="" coords="213,80,375,107"/>
+<area shape="rect" id="node11" href="$Graniastoslup_8hh.html" title="Zawiera definicję klasy Graniastoslup. " alt="" coords="597,80,738,107"/>
+<area shape="rect" id="node15" href="$Powierzchnia_8hh.html" title="Zawiera definicję klasy Powierzchnia. " alt="" coords="762,80,901,107"/>
+<area shape="rect" id="node17" href="$PowierzchniaFalowana_8hh.html" title="Zawiera definicję klasy PowierzchniaFalowana. " alt="" coords="925,80,1119,107"/>
+<area shape="rect" id="node19" href="$Pret_8hh.html" title="Zawiera definicję klasy Pret. " alt="" coords="1253,80,1338,107"/>
+<area shape="rect" id="node3" href="$Prostopadloscian_8cpp.html" title="Zawiera definicje dluzszych metod klasy Prostopadloscian. " alt="" coords="5,155,175,181"/>
+<area shape="rect" id="node4" href="$ProstopadloscianSCN_8hh.html" title="Zawiera definicję klasy ProstopadloscianSCN. " alt="" coords="199,155,389,181"/>
+<area shape="rect" id="node5" href="$ProstopadloscianSCN_8cpp.html" title="Zawiera definicje dluzszych metod klasy ProstopadloscianSCN. " alt="" coords="195,229,393,256"/>
+<area shape="rect" id="node6" href="$Dron_8hh.html" title="Zawiera definicję klasy Dron. " alt="" coords="467,229,556,256"/>
+<area shape="rect" id="node7" href="$Dron_8cpp.html" title="Zawiera definicje dluzszych metod klasy Dron. " alt="" coords="463,304,560,331"/>
+<area shape="rect" id="node8" href="$Scena_8cpp.html" title="Zawiera definicje dluzszych metod klasy Scena. " alt="" coords="581,379,687,405"/>
+<area shape="rect" id="node9" href="$Scena_8hh.html" title="Zawiera definicję klasy Scena. " alt="" coords="747,304,846,331"/>
+<area shape="rect" id="node10" href="$main_8cpp.html" title="Zawiera funkcje main. " alt="" coords="748,379,845,405"/>
+<area shape="rect" id="node12" href="$Graniastoslup_8cpp.html" title="Zawiera definicje dluzszych metod klasy Graniastoslup. " alt="" coords="414,155,563,181"/>
+<area shape="rect" id="node13" href="$GraniastoslupSCN_8hh.html" title="Zawiera definicję klasy GraniastoslupSCN. " alt="" coords="587,155,758,181"/>
+<area shape="rect" id="node14" href="$GraniastoslupSCN_8cpp.html" title="Zawiera definicje dluzszych metod klasy GraniastoslupSCN. " alt="" coords="581,229,759,256"/>
+<area shape="rect" id="node16" href="$Powierzchnia_8cpp.html" title="Zawiera definicje dluzszych metod klasy Powierzchnia. " alt="" coords="834,155,981,181"/>
+<area shape="rect" id="node18" href="$PowierzchniaFalowana_8cpp.html" title="Zawiera definicje dluzszych metod klasy PowierzchniaFalowana. " alt="" coords="1055,155,1258,181"/>
+<area shape="rect" id="node20" href="$Pret_8cpp.html" title="Zawiera definicje dluzszych metod klasy Pret. " alt="" coords="1333,155,1426,181"/>
+</map>

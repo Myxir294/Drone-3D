@@ -1,0 +1,10 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$classObiektSceny.html" title="Definicja klasy ObiektSceny. " alt="" coords="5,107,103,133"/>
+<area shape="rect" id="node2" href="$classGraniastoslup.html" title="Graniastoslup jako bryla przestrzenna o promieniu i srodku lokalnym. " alt="" coords="177,5,280,32"/>
+<area shape="rect" id="node4" href="$classPowierzchnia.html" title="Powierzchnia jako obiekt graficzny. " alt="" coords="179,56,279,83"/>
+<area shape="rect" id="node5" href="$classPowierzchniaFalowana.html" title="PowierzchniaFalowana jako obiekt graficzny. " alt="" coords="151,107,307,133"/>
+<area shape="rect" id="node6" href="$classPret.html" title="Pret jako obiekt graficzny. " alt="" coords="205,157,252,184"/>
+<area shape="rect" id="node7" href="$classProstopadloscian.html" title="Prostopadloscian jako bryla przestrzenna o promieniu i srodku lokalnym. " alt="" coords="167,208,290,235"/>
+<area shape="rect" id="node3" href="$classGraniastoslupSCN.html" title="GraniastoslupSCN jako Graniastoslup w ukladzie globalnym. " alt="" coords="365,5,495,32"/>
+<area shape="rect" id="node8" href="$classProstopadloscianSCN.html" title="ProstopadloscianSCN jako Prostopadloscian w ukladzie globalnym. " alt="" coords="355,208,505,235"/>
+</map>
