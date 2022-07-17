@@ -6,7 +6,7 @@ Program pozwala na sterowanie animowanym dronem podwodnym rysowanym w środowisk
 W celu realizacji zadania skorzystano z własnoręcznie napisanych szablonów macierzy i wektorów (wraz z metodami) oraz z dostarczonej przez prowadzącego kurs wtyczki ułatwiającej komunikację z programem Gnuplot.   
 Prezentację działania programu załączono w przedstawionym pliku wideo (dostępnym także online pod linkiem https://youtu.be/Xbw3qr2-9lE) 
 
-W folderze "html" zawarto dokumentację projektu zrealizowaną z wykorzystaniem programu Doxygen.   
+W folderze "html" zawarto szczegółową dokumentację projektu zrealizowaną z wykorzystaniem programu Doxygen.   
 W celu otworzenia interaktywnej dokumentacji należy pobrać folder a następnie otworzyć w przeglądarce dowolny plik z rozszerzeniem .html.  
 
 Program testowano na systemie operacyjnym Linux (Ubuntu). W przyszłości przewiduje się napisanie wersji dla systemu Windows.  
