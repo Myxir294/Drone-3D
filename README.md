@@ -7,6 +7,8 @@ W celu realizacji zadania skorzystano z własnoręcznie napisanych szablonów ma
 Prezentację działania programu załączono w przedstawionym pliku wideo.  
 
 W folderze "html" zawarto dokumentację projektu zrealizowaną z wykorzystaniem programu Doxygen.   
-W celu otworzenia interaktywnej dokumentacji należy pobrać folder a następnie otworzyć w przeglądarce dowolny plik z rozszerzeniem .html.
+W celu otworzenia interaktywnej dokumentacji należy pobrać folder a następnie otworzyć w przeglądarce dowolny plik z rozszerzeniem .html.  
+
+Program testowano na systemie operacyjnym Linux (Ubuntu). W przyszłości przewiduje się napisanie wersji dla systemu Windows.  
 
 
